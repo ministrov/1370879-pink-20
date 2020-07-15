@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Антон Жилин](https://up.htmlacademy.ru/adaptive/20/user/1370879).
-* Наставник: `Неизвестно`.
+* Наставник: [Натали Белоева](https://htmlacademy.ru/profile/id1123699).
 
 ---
 
