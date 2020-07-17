@@ -7,7 +7,7 @@
   <body class="page__body">
     <header class="page-header">
       <a class="page-header__logo">
-        <img src="https://via.placeholder.com/150x150">.
+        <img class="page-header__img" src="https://via.placeholder.com/150x150">.
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -16,24 +16,16 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a>
-                Главная
-              </a>
+              <a class="main-nav__link">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a href="photo.html">
-                Фотографии
-              </a>
+              <a class="main-nav__link" href="photo.html">Фотографии</a>
             </li>
             <li class="main-nav__item">
-              <a href="#">
-                Конкурс
-              </a>
+              <a class="main-nav__link" href="#">Конкурс</a>
             </li>
             <li class="main-nav__item">
-              <a href="#">
-                html academy
-              </a>
+              <a class="main-nav__link" href="#">html academy</a>
             </li>
           </ul>
         </div>
@@ -48,8 +40,8 @@
           <h2 class="visually-hidden">Вводная информация</h2>
           <p class="intro__slogan">Взгляните на жизнь иначе!</p>
         </header>
-        <img src="https://via.placeholder.com/150x150">
-        <ul class="intro__icon__list">
+        <img class="intro__img" src="https://via.placeholder.com/150x150">
+        <ul class="intro__list">
           <li class="intro__item--apple">
             <span class="visually-hidden">Apple</span>
           </li>
@@ -60,7 +52,7 @@
             <span class="visually-hidden">Windows</span>
           </li>
         </ul>
-        <p class="intro__icon__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <p class="intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         <button class="intro__button" type="button">Скачать приложение</button>
       </section>
 
@@ -84,7 +76,7 @@
             <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <img src="https://via.placeholder.com/150x150">
+        <img class="advantages__img" src="https://via.placeholder.com/150x150">
        </section>
 
        <section class="reviews">
@@ -173,6 +165,7 @@
     </main>
 
     <footer class="page-footer">
+    <div class="page-footer__wrapper">
       <div class="page-footer__contacts contacts">
         <p class="contacts__title">Остались вопросы?<br>Свяжитесь с нами!</p>
         <p class="contacts__text">Звоните:</p>
@@ -181,11 +174,11 @@
         <a class="contacts__email" href="#">mail@htmlacademy.ru</a>
         <p class="contacts__text">Приезжайте в гости:</p>
         <cite class="contacts__address">ул. Большая Конюшенная, 19/8</cite>
-        <img src="https://via.placeholder.com/150x150">
+        <img class="page-footer__img" src="https://via.placeholder.com/150x150">
       </div>
       <div class="page-footer__logo">
         <a href="#">
-          <img src="https://via.placeholder.com/150x150">
+          <img class="logo__img" src="https://via.placeholder.com/150x150">
         </a>
       </div>
       <div class="page-footer__social">
@@ -203,8 +196,11 @@
       </div>
       <div class="page-footer__copyright">
         <p class="copyright__text">Разработано</p>
-        <a class="copyright__logo--htmlacademy" href="#"></a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">Логотип htmlacademy</span>
+        </a>
       </div>
+    </div>
     </footer>
   </body>
 </html>
