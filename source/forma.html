@@ -16,7 +16,7 @@
             <div class="main-nav__wrapper">
               <ul class="main-nav__list">
                   <li class="main-nav__item">
-                    <a class="main-nav__link">Главная</a>
+                    <a class="main-nav__link" href="index.html">Главная</a>
                   </li>
                   <li class="main-nav__item">
                     <a class="main-nav__link" href="photo.html">Фотографии</a>
@@ -33,22 +33,24 @@
       </header>
       <main class="page-main">
           <div class="page-main__wrapper">
-            <h1 class="visually-hidden">Содержимое страницы формы</h1>
+            <h1 class="visually-hidden">Конкурс среди пользователей приложения на лучшее путешествие с Пинк </h1>
             <cite class="page-main__slogan">Конкурс на самое <br>безбашенное <br>путешествие с Пинк</cite>
             <p class="page-main__text">Поделитесь своей историей и получите <br>шанс выиграть ценный приз — 1000 <br>миль на вашу бонусную карту!</p>
             <form class="page-main__form" action="https://echo.htmlacademy.ru" method="post">
-                <div class="group">
-                  <label class="group__label" for="surename">Фамилия:</label>
-                  <input class="group__input" id="surename" type="text" name="surename" placeholder="Укажите фамилию" required>
-                </div>
-                <div class="group">
-                  <label class="group__label" for="name">Имя:</label>
-                  <input class="group__input" id="name" type="text" name="name" placeholder="Введите ваше имя" required>
-                </div>
-                <div class="group">
-                  <label class="group__label" for="second-name">Отчество:</label>
-                  <input class="group__input" id="second-name" type="text"  name="username" placeholder="Ну и отчество тоже">
-                </div>
+                <fieldset class="group">
+                  <div class="group__division">
+                    <label class="group__label" for="user-surname">Фамилия:</label>
+                    <input class="group__input" id="user-surname" type="text" name="surename" placeholder="Укажите фамилию" required>
+                  </div>
+                  <div class="group__division">
+                    <label class="group__label" for="user-name">Имя:</label>
+                    <input class="group__input" id="user-name" type="text" name="name" placeholder="Введите ваше имя" required>
+                  </div>
+                  <div class="group__division">
+                    <label class="group__label" for="second-name">Отчество:</label>
+                    <input class="group__input" id="second-name" type="text"  name="username" placeholder="Ну и отчество тоже">
+                  </div>
+                </fieldset>
                 <fieldset class="form-checkbox">
                   <legend class="form-checkbox__legend">Ваши безбашенные достижения в путешествии</legend>
                   <ul class="form-checkbox__list">
@@ -78,36 +80,38 @@
                       </li>
                   </ul>
                 </fieldset>
-                <div class="entry-field">
-                  <label class="entry-field__label" for="phone-number">Номер телефона</label>
-                  <input class="entry-field__input" id="phone-number" type="text" name="phonenumber" placeholder="Номер,пожалуйста">
-                </div>
-                <div class="entry-field">
-                  <label class="entry-field__label" for="email-address">Адрес почты</label>
-                  <input class="entry-field__input" id="email-address" type="text" name="emailaddress" placeholder="Введите почту" required>
-                </div>
+                <fieldset class="entry-field">
+                  <div class="entry-field__division">
+                    <label class="entry-field__label" for="phone-number">Номер телефона</label>
+                    <input class="entry-field__input" id="phone-number" type="tel" name="phonenumber" placeholder="Номер,пожалуйста">
+                  </div>
+                  <div class="entry-field__division">
+                    <label class="entry-field__label" for="email-address">Адрес почты</label>
+                    <input class="entry-field__input" id="email-address" type="email" name="emailaddress" placeholder="Введите почту" required>
+                  </div>
+                </fieldset>
                 <fieldset class="radio">
                   <legend class="radio__legend">С каким приложением путешествовали?</legend>
                   <ul class="radio__list">
                       <li class="radio__item">
-                        <input class="radio__input" type="radio" name="text" id="pink-for-ios" checked>
+                        <input class="radio__input" type="radio" name="pink-app" id="pink-for-ios" checked>
                         <label class="radio__label" for="pink-for-ios">Pink для iOS</label>
                       </li>
                       <li class="radio__item">
-                        <input class="radio__input" type="radio" name="text" id="pink-android">
+                        <input class="radio__input" type="radio" name="pink-app" id="pink-android">
                         <label class="radio__label" for="pink-android">Pink на Android</label>
                       </li>
                       <li class="radio__item">
-                        <input class="radio__input" type="radio" name="text" id="windows-pink">
+                        <input class="radio__input" type="radio" name="pink-app" id="windows-pink">
                         <label class="radio__label" for="windows-pink">Windows Phone</label>
                       </li>
                   </ul>
                 </fieldset>
                 <div class="form-textarea">
                   <label class="form-textarea__label" for="emotions">Опишите свои эмоции</label>
-                  <textarea class="form-textarea__textarea" id="emotions" rows="8" cols="80" name="text"  placeholder="Можно прям в красках, не стеснясь в выражениях"></textarea>
+                  <textarea class="form-textarea__textarea" id="emotions" rows="8" cols="80" name="comment-field"  placeholder="Можно прям в красках, не стеснясь в выражениях"></textarea>
                 </div>
-                <button class="form__button" type="button" name="button">Отправить форму</button>
+                <button class="page-main__button" type="submit">Отправить форму</button>
             </form>
           </div>
       </main>
