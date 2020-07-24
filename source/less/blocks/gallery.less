@@ -1,3 +1,55 @@
 .gallery {
-  background-color: tomato;
+  margin: 0;
+}
+
+.gallery__wrapper {
+  outline: @outline-pink;
+}
+
+.gallery__title {
+  font-size: 24px;
+  font-weight: 300;
+  color: @color-white;
+}
+
+.gallery__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: @color-black;
+}
+
+.gallery__list {
+  list-style: none;
+}
+
+.gallery__author {
+  font-size: 14px;
+  font-weight: bold;
+  color: @color-black;
+
+  time {
+    font-size: 14px;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: @color-black;
+  }
+}
+
+.gallery__comment {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: @color-black;
+}
+
+.gallery__heart {
+  color: @hover-color;
+}
+
+.gallery__like {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: @hover-color;
 }
