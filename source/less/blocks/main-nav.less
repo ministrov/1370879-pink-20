@@ -1,9 +1,5 @@
 .main-nav {
   color: @color-white;
-
-  a {
-    color: @color-white;
-  }
 }
 
 .main-nav__wrapper {
@@ -15,11 +11,45 @@
   margin: 0;
   padding: 0;
   list-style: none;
+}
 
-  .main-nav__link {
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 32px;
-    text-transform: uppercase;
+.main-nav__link {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: @color-white;
+
+  &:hover,
+  &focus {
+    color: @hover-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__link--active {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 87px;
+    height: 2px;
+    left: 0;
+    top:166px;
+    background-color: @color-white;
+  }
+}
+
+.main-nav__link--current {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 128px;
+    height: 2px;
+    left: 0;
+    top: 134px;
+    background-color: @color-white;
   }
 }

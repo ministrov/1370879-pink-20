@@ -16,17 +16,28 @@
   font-size: 18px;
   font-weight: bold;
   color: @color-black;
+}
 
-  .contacts__phone {
-    font-size: 24px;
-    font-weight: 300;
-    color: @hover-color;
+.contacts__phone {
+  font-size: 24px;
+  font-weight: 300;
+  color: @hover-color;
+}
+
+.contacts__email {
+  font-size: 24px;
+  font-weight: 300;
+  color: @hover-color;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    color: @color-black;
   }
 
-  .contacts__email {
-    font-size: 24px;
-    font-weight: 300;
-    color: @hover-color;
+  &:active {
+    color: @color-black;
+    opacity: 0.3;
   }
 }
 
@@ -35,16 +46,10 @@
   font-style: normal;
   font-weight: bold;
   color: @color-black;
-
-  .contacts__text {
-    font-size: 24px;
-    font-weight: 300;
-    color: @hover-color;
-  }
 }
 
-.social {
-  .social__list {
-    list-style: none;
-  }
+.contacts__text {
+  font-size: 24px;
+  font-weight: 300;
+  color: @hover-color;
 }

@@ -20,8 +20,27 @@
   color: @color-white;
 }
 
-.intro__link {
+.intro__button {
+  display: inline-block;
+  min-width: 300px;
+  min-height: 56px;
   font-size: 18px;
   font-weight: bold;
+  line-height: 56px;
+  text-align: center;
   color: @color-white;
+  box-sizing: border-box;
+  border: 3px solid @color-white;
+  border-radius: 30px;
+  vertical-align: middle;
+
+  &:hover,
+  &:focus {
+    color: @hover-color;
+    background-color: @color-white;
+  }
+
+  &:active {
+    color: @active-color;
+  }
 }
