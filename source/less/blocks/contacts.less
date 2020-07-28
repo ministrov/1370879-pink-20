@@ -1,33 +1,29 @@
 .contacts__title {
   font-size: 24px;
   font-weight: 300;
+  line-height: 24px;
   color: @color-black;
 }
 
 .contacts__text {
   font-size: 18px;
   font-weight: bold;
+  font-style: normal;
+  line-height: 24px;
   color: @color-black;
 }
 
-span {
-  &.contacts__text {
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 24px;
-    color: @hover-color;
-  }
+.contacts__address {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 24px;
+  color: @hover-color;
 }
 
 .contacts__phone {
   font-size: 24px;
   font-weight: 300;
-  color: @hover-color;
-}
-
-.contacts__email {
-  font-size: 24px;
-  font-weight: 300;
+  line-height: 24px;
   color: @hover-color;
 
   &:hover,
@@ -42,9 +38,20 @@ span {
   }
 }
 
-.contacts__address {
-  font-size: 18px;
-  font-style: normal;
-  font-weight: bold;
-  color: @color-black;
+.contacts__email {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 24px;
+  color: @hover-color;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    color: @color-black;
+  }
+
+  &:active {
+    color: @color-black;
+    opacity: 0.3;
+  }
 }
