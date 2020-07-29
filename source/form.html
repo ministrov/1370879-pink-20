@@ -3,11 +3,12 @@
     <head>
       <meta charset="UTF-8">
       <title>Страница формы сайта фотоприложения для раскрашивания серых будней</title>
+      <link rel="stylesheet" href="css/style.css">
     </head>
     <body class="page-body">
       <header class="page-header">
-        <a class="page-header__logo">
-          <img class="page-header__img" src="https://via.placeholder.com/150x150" alt="Логотип Пинк сайта фотоприложения для раскрашивания серых будней">
+        <a class="page-header__logo" href="#">
+          <img class="page-header__img" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Пинк сайта фотоприложения для раскрашивания серых будней">
         </a>
           <nav class="main-nav">
             <button class="main-nav__toggle" type="button">
@@ -22,7 +23,7 @@
                     <a class="main-nav__link" href="photo.html">Фотографии</a>
                   </li>
                   <li class="main-nav__item">
-                    <a class="main-nav__link" href="#">Конкурс</a>
+                    <a class="main-nav__link main-nav__link--active" href="#">Конкурс</a>
                   </li>
                   <li class="main-nav__item">
                     <a class="main-nav__link" href="https://htmlacademy.ru/study">html academy</a>
@@ -32,23 +33,24 @@
           </nav>
       </header>
       <main class="page-main">
-          <div class="page-main__wrapper">
+          <section class="intro">
             <h1 class="visually-hidden">Конкурс среди пользователей приложения на лучшее путешествие с Пинк </h1>
-            <cite class="page-main__slogan">Конкурс на самое <br>безбашенное <br>путешествие с Пинк</cite>
-            <p class="page-main__text">Поделитесь своей историей и получите <br>шанс выиграть ценный приз — 1000 <br>миль на вашу бонусную карту!</p>
-            <form class="page-main__form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="intro__slogan">Конкурс на самое <br>безбашенное <br>путешествие с Пинк</p>
+          </section>
+          <p class="page-main__text">Поделитесь своей историей и получите <br>шанс выиграть ценный приз — 1000 <br>миль на вашу бонусную карту!</p>
+          <form class="page-main__form" action="https://echo.htmlacademy.ru" method="post">
                 <fieldset class="group">
                   <div class="group__division">
                     <label class="group__label" for="user-surname">Фамилия:</label>
-                    <input class="group__input" id="user-surname" type="text" name="surename" placeholder="Укажите фамилию" required>
+                    <input class="group__input" id="user-surname" type="text" name="user-surname" placeholder="Укажите фамилию" required>
                   </div>
                   <div class="group__division">
                     <label class="group__label" for="user-name">Имя:</label>
-                    <input class="group__input" id="user-name" type="text" name="name" placeholder="Введите ваше имя" required>
+                    <input class="group__input" id="user-name" type="text" name="user-name" placeholder="Введите ваше имя" required>
                   </div>
                   <div class="group__division">
                     <label class="group__label" for="second-name">Отчество:</label>
-                    <input class="group__input" id="second-name" type="text"  name="username" placeholder="Ну и отчество тоже">
+                    <input class="group__input" id="second-name" type="text"  name="second-name" placeholder="Ну и отчество тоже">
                   </div>
                 </fieldset>
                 <fieldset class="form-checkbox">
@@ -113,13 +115,12 @@
                 </div>
                 <button class="page-main__button" type="submit">Отправить форму</button>
             </form>
-          </div>
       </main>
       <footer class="form-footer">
           <div class="form-footer__wrapper">
             <div class="form-footer-logo">
               <a class="form-footer-logo__link" href="#">
-                <img class="form-footer-logo__img" src="https://via.placeholder.com/150x150" alt="Логотип htmlacademy">
+                <img class="form-footer-logo__img" src="img/logo-pink-blue-mobile.svg" width="145" height="40" alt="Логотип htmlacademy">
               </a>
             </div>
             <div class="social">
@@ -144,7 +145,7 @@
             <div class="copyright">
               <p class="copyright__text">Разработано</p>
               <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-                <img class="copyright__img" src="https://via.placeholder.com/150x150" alt="Логотип htmlacademy">
+                <img class="copyright__img" src="img/htmlacademy-pink.svg" width="27" height="34" alt="Логотип htmlacademy">
               </a>
             </div>
           </div>

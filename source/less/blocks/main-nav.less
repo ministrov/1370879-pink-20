@@ -1,0 +1,55 @@
+.main-nav {
+  color: @color-white;
+}
+
+.main-nav__wrapper {
+  outline: @outline;
+  outline-offset: -5px;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__link {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: @color-white;
+
+  &:hover,
+  &focus {
+    color: @hover-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__link--active {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 87px;
+    height: 2px;
+    left: 0;
+    top: 148px;
+    background-color: @color-white;
+  }
+}
+
+.main-nav__link--current {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 133px;
+    height: 2px;
+    left: 0;
+    top: 116px;
+    background-color: @color-white;
+  }
+}
