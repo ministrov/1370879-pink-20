@@ -24,4 +24,15 @@
   vertical-align: middle;
   border: 2px solid @page-main-button-green;
   border-radius: 1px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: @page-main-button-green-hover;
+    outline: none;
+  }
+
+  &:active {
+    color: @page-main-button-active;
+  }
 }
