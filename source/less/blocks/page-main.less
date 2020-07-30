@@ -13,10 +13,10 @@
   display: inline-block;
   min-width: 276px;
   min-height: 59px;
+  padding: 0;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
-  text-align: center;
   text-transform: uppercase;
   color: @color-white;
   background-color: @page-main-button-green;
@@ -35,4 +35,12 @@
   &:active {
     color: @page-main-button-active;
   }
+}
+
+.page-main__button--disabled {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: @color-white;
+  background-color: @input-grey;
 }
