@@ -2,11 +2,13 @@
 <html class="page" lang="ru">
     <head>
       <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Фотогалерея сайта фотоприложений для раскрашивания серых будней</title>
       <link rel="stylesheet" href="css/style.css">
     </head>
     <body class="page-body">
       <header class="page-header">
+        <div class="page-header__wrapper container">
           <a class="page-header__logo" href="#">
             <img class="page-header__img" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Пинк сайта фотоприложения для раскрашивания серых будней">
           </a>
@@ -15,22 +17,23 @@
               <span class="visually-hidden">Открыть меню</span>
             </button>
             <div class="main-nav__wrapper">
-                <ul class="main-nav__list">
+              <ul class="main-nav__list">
                   <li class="main-nav__item">
-                      <a class="main-nav__link" href="index.html">Главная</a>
+                    <a class="main-nav__link" href="index.html">Главная</a>
+                  </li>
+                  <li class="main-nav__item main-nav__item-link--active">
+                    <a class="main-nav__link" href="photo.html">Фотографии</a>
                   </li>
                   <li class="main-nav__item">
-                      <a class="main-nav__link main-nav__link--current" href="photo.html">Фотографии</a>
+                    <a class="main-nav__link main-nav__link--active" href="form.html">Конкурс</a>
                   </li>
                   <li class="main-nav__item">
-                      <a class="main-nav__link" href="form.html">Конкурс</a>
+                    <a class="main-nav__link" href="https://htmlacademy.ru/study">html academy</a>
                   </li>
-                  <li class="main-nav__item">
-                      <a class="main-nav__link" href="https://htmlacademy.ru/study">html academy</a>
-                  </li>
-                </ul>
+              </ul>
             </div>
           </nav>
+        </div>
       </header>
       <main class="page-main">
           <section class="intro">

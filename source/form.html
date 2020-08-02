@@ -2,14 +2,16 @@
 <html class="page" lang="ru">
     <head>
       <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Страница формы сайта фотоприложения для раскрашивания серых будней</title>
       <link rel="stylesheet" href="css/style.css">
     </head>
     <body class="page-body">
       <header class="page-header">
-        <a class="page-header__logo" href="#">
-          <img class="page-header__img" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Пинк сайта фотоприложения для раскрашивания серых будней">
-        </a>
+        <div class="page-header__wrapper container">
+          <a class="page-header__logo" href="#">
+            <img class="page-header__img" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Пинк сайта фотоприложения для раскрашивания серых будней">
+          </a>
           <nav class="main-nav">
             <button class="main-nav__toggle" type="button">
               <span class="visually-hidden">Открыть меню</span>
@@ -23,7 +25,7 @@
                     <a class="main-nav__link" href="photo.html">Фотографии</a>
                   </li>
                   <li class="main-nav__item">
-                    <a class="main-nav__link main-nav__link--active" href="#">Конкурс</a>
+                    <a class="main-nav__link main-nav__item-link--active" href="#">Конкурс</a>
                   </li>
                   <li class="main-nav__item">
                     <a class="main-nav__link" href="https://htmlacademy.ru/study">html academy</a>
@@ -31,6 +33,7 @@
               </ul>
             </div>
           </nav>
+        </div>
       </header>
       <main class="page-main">
           <section class="intro">

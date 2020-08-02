@@ -2,11 +2,13 @@
 <html class="page" lang="ru">
     <head>
       <meta charset="utf-8">
-      <title>Пинк сайт фотоприложения для раскрашивания серых будней</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="css/style.css">
+      <title>Пинк сайт фотоприложения для раскрашивания серых будней</title>
     </head>
     <body class="page-body">
       <header class="page-header">
+        <div class="page-header__wrapper container">
           <a class="page-header__logo" href="#">
             <img class="page-header__img" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Пинк сайта фотоприложения для раскрашивания серых будней">
           </a>
@@ -15,72 +17,76 @@
               <span class="visually-hidden">Открыть меню</span>
             </button>
             <div class="main-nav__wrapper">
-                <ul class="main-nav__list">
+              <ul class="main-nav__list">
                   <li class="main-nav__item">
-                    <a class="main-nav__link">Главная</a>
+                    <a class="main-nav__link" href="index.html">Главная</a>
                   </li>
                   <li class="main-nav__item">
                     <a class="main-nav__link" href="photo.html">Фотографии</a>
                   </li>
                   <li class="main-nav__item">
-                    <a class="main-nav__link" href="form.html">Конкурс</a>
+                    <a class="main-nav__link" href="#">Конкурс</a>
                   </li>
                   <li class="main-nav__item">
                     <a class="main-nav__link" href="https://htmlacademy.ru/study">html academy</a>
                   </li>
-                </ul>
+              </ul>
             </div>
           </nav>
+        </div>
       </header>
       <main class="page-main">
           <section class="intro">
+            <div class="intro__wrapper container">
               <h1 class="visually-hidden">Сайт фотоприложения для раскрашивания серых будней</h1>
               <p class="intro__slogan">Взгляните на жизнь иначе!</p>
-            <img class="intro__img" src="img/iphone-hand-mobile@1x.png" width="320" height="286" alt="Фотография мобильного телефона на котором запущено приложение Пинк">
-            <ul class="intro__list">
-                <li class="intro__item">
-                  <a class="intro__link intro__link--apple" href="#">
-                    <span class="visually-hidden">Apple</span>
-                  </a>
-                </li>
-                <li class="intro__item">
-                  <a class="intro__link intro__link--android" href="#">
-                    <span class="visually-hidden">Android</span>
-                  </a>
-                </li>
-                <li class="intro__item">
-                  <a class="intro__link intro__link--windows" href="#">
-                    <span class="visually-hidden">Windows</span>
-                  </a>
-                </li>
-            </ul>
-            <p class="intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-            <a class="button button--white" href="#">Скачать приложение</a>
+              <a class="intro__button button button--white" href="#">Скачать приложение</a>
+              <ul class="intro__list">
+                  <li class="intro__item">
+                    <a class="intro__link intro__link--apple" href="#">
+                      <span class="visually-hidden">Apple</span>
+                    </a>
+                  </li>
+                  <li class="intro__item">
+                    <a class="intro__link intro__link--android" href="#">
+                      <span class="visually-hidden">Android</span>
+                    </a>
+                  </li>
+                  <li class="intro__item">
+                    <a class="intro__link intro__link--windows" href="#">
+                      <span class="visually-hidden">Windows</span>
+                    </a>
+                  </li>
+              </ul>
+              <p class="intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+            </div>
           </section>
 
           <section class="advantages">
-              <h2 class="visually-hidden">Информация о преимуществах</h2>
-              <p class="advantages__text">Устали от серости <br>мегаполиса?</p>
-              <p class="advantages__text">Нам есть что вам <br>предложить!</p>
-            <ul class="advantages__list">
-                <li class="advantages__item">
-                  <h3 class="advantages__title">Поднимает настроение</h3>
-                  <p class="advantages__description">Приложение позволит вам победить<br> осеннюю хандру и депрессию <br>буквально в несколько кликов!</p>
-                </li>
-                <li class="advantages__item">
-                  <h3 class="advantages__title">Меняет мир вокруг</h3>
-                  <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-                </li>
-                <li class="advantages__item">
-                  <h3 class="advantages__title">Заводит новых друзей</h3>
-                  <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-                </li>
-            </ul>
+            <div class="advantages__wrapper container">
+                <h2 class="visually-hidden">Информация о преимуществах</h2>
+                <p class="advantages__text">Устали от серости <br>мегаполиса?</p>
+                <p class="advantages__text">Нам есть что вам <br>предложить!</p>
+              <ul class="advantages__list">
+                  <li class="advantages__item">
+                    <h3 class="advantages__title">Поднимает настроение</h3>
+                    <p class="advantages__description">Приложение позволит вам победить<br> осеннюю хандру и депрессию <br>буквально в несколько кликов!</p>
+                  </li>
+                  <li class="advantages__item">
+                    <h3 class="advantages__title">Меняет мир вокруг</h3>
+                    <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                  </li>
+                  <li class="advantages__item">
+                    <h3 class="advantages__title">Заводит новых друзей</h3>
+                    <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+                  </li>
+              </ul>
+            </div>
           </section>
 
           <section class="reviews">
             <h2 class="visually-hidden">Отзывы о нас</h2>
-            <div class="reviews__wrapper">
+            <div class="reviews__wrapper container">
               <ul class="reviews__list slider">
                   <li class="slider__item">
                     <cite class="reviews__author">Николай Петров</cite>
@@ -168,7 +174,7 @@
       </main>
 
       <footer class="page-footer">
-          <div class="page-footer__wrapper">
+          <div class="page-footer__wrapper container">
             <div class="page-footer__contacts contacts">
               <p class="contacts__title">Остались вопросы?<br>Свяжитесь с нами!</p>
               <p class="contacts__text">
