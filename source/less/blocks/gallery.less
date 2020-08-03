@@ -1,6 +1,3 @@
-.gallery {
-  margin: 0;
-}
 
 .gallery__wrapper {
   outline: @outline-pink;
@@ -28,34 +25,84 @@
     margin: 0;
     margin-top: 100px;
     margin-bottom: 85px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 18px;
     line-height: 30px;
     text-align: center;
+
+    max-width: 450px;
   }
 }
 
 .gallery__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 
   @media (min-width: @tablet-width) {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     flex-wrap: wrap;
+
+    margin-top: 50px;
   }
 }
 
 .gallery__item {
+  margin-bottom: 20px;
   background-color: @bg-gallery-storage;
 
   @media (min-width: @tablet-width) {
-    &:not(:first-child) {
-      max-width: 300px;
-    }
+    max-width: 300px;
+    min-height: 455px;
+  }
+}
 
-    &:first-child {
-      width: 100%;
-    }
+.gallery__item:nth-child(odd) {
+
+  @media (min-width: @tablet-width) {
+    margin-right: 20px;
+  }
+}
+
+.gallery__item:nth-child(even) {
+
+  @media (min-width: @tablet-width) {
+    margin-right: 0;
+  }
+}
+
+
+.gallery__content-wrapper {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    margin: 0 auto;
+  }
+}
+
+/*временные размеры картинки*/
+.gallery__head-img {
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    height: 509px;
+  }
+}
+
+/*временные размеры картинки*/
+.gallery__img {
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    height: 300px;
   }
 }
 
@@ -64,6 +111,11 @@
   font-weight: bold;
   line-height: 24px;
   color: @color-black;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-left: 30px;
+  }
 }
 
 .gallery__time {
@@ -79,10 +131,18 @@
   font-weight: 400;
   line-height: 24px;
   color: @color-black;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 30px;
+  }
 }
 
 .gallery__heart {
   color: @hover-color;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 30px;
+  }
 }
 
 .gallery__like {
@@ -91,4 +151,9 @@
   line-height: 24px;
   text-transform: uppercase;
   color: @hover-color;
+
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
