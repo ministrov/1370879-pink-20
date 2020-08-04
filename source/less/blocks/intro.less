@@ -2,9 +2,12 @@
   padding-bottom: 38px;
   text-align: center;
   background-color: @bg-intro;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 272px;
+  background-position: top;
 
   @media (min-width: @tablet-width) {
-    text-align: left;
     background-image: url("../img/bg-back-tablet@1x.jpg");
   }
 
@@ -22,18 +25,15 @@
   color: @color-white;
 
   @media (min-width: @tablet-width) {
+    max-width: 246px;
     padding-top: 102px;
-    padding-left: 60px;
-    padding-right: 315px;
     font-size: 40px;
     line-height: 1.2em;
     text-align: center;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 114px;
-    padding-left: 0;
-    padding-right: 643px;
+    max-width: 300px;
     font-size: 50px;
     line-height: 68px;
     text-align: center;
