@@ -18,7 +18,7 @@
 .contacts__title {
   font-size: 24px;
   font-weight: 300;
-  line-height: 24px;
+  line-height: 1.2;
   color: @color-black;
 
   @media (min-width: @tablet-width) {
@@ -26,18 +26,19 @@
     padding-top: 55px;
     font-size: 40px;
     text-align: center;
-    line-height: 1.2em;
+    line-height: 55px;
   }
 
   @media (min-width: @desktop-width) {
     padding-top: 74px;
     font-size: 50px;
-    line-height: 1.2em;
+    line-height: 65px;
     text-align: center;
   }
 }
 
 .contacts__text {
+  display: grid;
   font-size: 18px;
   font-weight: bold;
   font-style: normal;
@@ -46,7 +47,12 @@
 
   @media (min-width: @tablet-width) {
     display: block;
-    width: 50%;
+    width: 241px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    width: 33.33%;
   }
 }
 
@@ -58,7 +64,7 @@
 
   @media (min-width: @tablet-width) {
     display: block;
-    width: 50%;
+    width: 211px;
   }
 }
 
