@@ -3,20 +3,35 @@
 }
 
 .reviews__list {
+  padding: 0;
   list-style: none;
 }
 
 .reviews__author {
+  display: block;
   font-size: 18px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 30px;
+  text-align: center;
   color: @black;
 }
 
 .reviews__comment {
+  width: 280px;
+  height: 160px;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
+  text-align: center;
   color: @color-black;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 688px;
+    margin-left: 115px;
+  }
 }
