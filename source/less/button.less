@@ -1,13 +1,64 @@
 .button {
   display: inline-block;
-  min-width: 280px;
-  min-height: 55px;
   font-family: inherit;
   font-size: 18px;
   font-weight: 700;
-  line-height: 56px;
+  line-height: 46px;
   text-align: center;
   box-sizing: border-box;
   vertical-align: middle;
   border-radius: 30px;
+  color: @hover-color;
+  border: 3px solid @hover-color;
+  cursor: pointer;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    color: @color-white;
+    background-color: @hover-color;
+  }
+
+  &:active {
+    color: @page-main-button-active;
+  }
+}
+
+.button--grey {
+  border: 3px solid @color-black;
+  color: @color-black01;
+  opacity: 0.1;
+
+  &:hover,
+  &:focus {
+    color: @color-black;
+    background-color: @input-grey;
+    opacity: 0.3;
+  }
+
+  &:active {
+    color: @page-main-button-active;
+    background-color: @color-black;
+    opacity: 0.3;
+  }
+}
+
+.button--white {
+  color: @color-white;
+  border: 3px solid @color-white;
+
+  &:hover,
+  &:focus {
+    color: @hover-color;
+    background-color: @color-white;
+  }
+
+  &:active {
+    background-color: @color-white;
+    color: @active-color;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: table;
+  }
 }
