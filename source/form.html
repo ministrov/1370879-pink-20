@@ -39,8 +39,9 @@
           <section class="intro">
             <h1 class="intro__slogan intro-slogan-form">Конкурс на самое <br>безбашенное <br>путешествие с Пинк</h1>
           </section>
-          <p class="page-main__text">Поделитесь своей историей и получите <br>шанс выиграть ценный приз — 1000 <br>миль на вашу бонусную карту!</p>
-          <form class="page-main__form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="page-main__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<br>Пожалуйста, заполните форму ниже:</p>
+          <div class="page-main__form-wrapper container">
+            <form class="page-main__form" action="https://echo.htmlacademy.ru" method="post">
                 <fieldset class="group">
                   <div class="group__division">
                     <label class="group__label" for="user-surname">Фамилия:</label>
@@ -113,10 +114,12 @@
                 </fieldset>
                 <div class="form-textarea">
                   <label class="form-textarea__label" for="emotions">Опишите свои эмоции</label>
-                  <textarea class="form-textarea__textarea" id="emotions" rows="8" cols="80" name="comment-field"  placeholder="Можно прям в красках, не стеснясь в выражениях"></textarea>
+                  <textarea class="form-textarea__textarea" id="emotions" rows="5" cols="10" name="comment-field"  placeholder="Можно прям в красках, не стеснясь в выражениях"></textarea>
                 </div>
                 <button class="page-main__button" type="submit">Отправить форму</button>
+                <p class="page-main__required">*-обязательные поля</p>
             </form>
+          </div>
       </main>
       <footer class="form-footer">
           <div class="form-footer__wrapper">

@@ -40,7 +40,7 @@
             <h1 class="intro__slogan intro-slogan-form">Фотографии <br>пользователей</h1>
           </section>
 
-            <div class="gallery">
+            <section class="gallery">
               <p class="gallery__text container">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
               <div class="gallery__head-item">
                 <a class="gallery__link" href="#">
@@ -107,40 +107,51 @@
               </ul>
             </div>
 
-            <form class="gallery-storage" action="https://echo.htmlacademy.ru" method="post">
-          <p class="gallery-storage__title">Затмите их всех! <br>Выкладывайте все, что накопилось в телефоне!</p>
-          <img class="gallery-storage__img" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Фотография с мобильного телефона зимней дороги в лесу">
-          <ul class="gallery-storage__list">
-            <li class="gallery-storage__item">
-              <button class="gallery-storage__toggle gallery-storage__toggle--current" type="button">
-                <span class="visually-hidden">Кнопка кадрирования фотографии</span>
-              </button>
-              <div class="scale">
-                <div class="scale__bar"></div>
-              </div>
-            </li>
-            <li class="gallery-storage__item">
-              <button class="gallery-storage__toggle" type="button">
-                <span class="visually-hidden">Кнопка заливки фотографии</span>
-              </button>
-              <div class="scale">
-                <div class="scale__bar"></div>
-              </div>
-            </li>
-            <li class="gallery-storage__item">
-              <button class="gallery-storage__toggle" type="button">
-                <span class="visually-hidden">Кнопка контрастности</span>
-              </button>
-              <div class="scale">
-                <div class="scale__bar"></div>
-              </div>
-            </li>
-          </ul>
-          <div class="toggle-slider" tabindex="0"></div>
-          <button class="button" type="submit">Запостить</button>
-          <button class="button button--grey" type="reset">Отмена</button>
-        </form>
+
+        <div class="gallery-storage">
+          <div class="gallery-storage__header container">
+            <p class="gallery-storage__title">Затмите их всех! <br>Выкладывайте все, что накопилось в телефоне!</p>
           </div>
+          <div class="gallery-storage__form-wrapper">
+            <div class="gallery-storage__container container">
+              <img class="gallery-storage__img" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Фотография с мобильного телефона зимней дороги в лесу">
+              <div class="gallery-storage__form">
+                  <ul class="gallery-storage__list">
+                    <li class="gallery-storage__item">
+                      <button class="gallery-storage__toggle gallery-storage__toggle--current" type="button">
+                        <span class="visually-hidden">Кнопка кадрирования фотографии</span>
+                      </button>
+                      <div class="scale">
+                        <div class="scale__bar"></div>
+                      </div>
+                    </li>
+                    <li class="gallery-storage__item">
+                      <button class="gallery-storage__toggle" type="button">
+                        <span class="visually-hidden">Кнопка заливки фотографии</span>
+                      </button>
+                      <div class="scale">
+                        <div class="scale__bar"></div>
+                      </div>
+                    </li>
+                    <li class="gallery-storage__item">
+                      <button class="gallery-storage__toggle" type="button">
+                        <span class="visually-hidden">Кнопка контрастности</span>
+                      </button>
+                      <div class="scale">
+                        <div class="scale__bar"></div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="toggle-slider" tabindex="0"></div>
+                  <div class="gallery-storage__button-wrapper">
+                    <button class="button" type="submit">Запостить</button>
+                    <button class="button button--grey" type="reset">Отмена</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       </main>
       <footer class="photo-footer">
         <div class="photo-footer__wrapper">

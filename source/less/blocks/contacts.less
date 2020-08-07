@@ -38,7 +38,6 @@
 }
 
 .contacts__text {
-  display: grid;
   font-size: 18px;
   font-weight: bold;
   font-style: normal;
@@ -56,6 +55,12 @@
   }
 }
 
+.contacts__text:nth-of-type(2) {
+  @media (min-width: @desktop-width) {
+    order: 1;
+  }
+}
+
 .contacts__address {
   font-size: 24px;
   font-weight: 300;
@@ -70,9 +75,15 @@
     padding: 0;
     line-height: 36px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin: 48px;
+    margin-top: 0;
+  }
 }
 
 .contacts__phone {
+  display: block;
   font-size: 24px;
   font-weight: 300;
   line-height: 24px;
@@ -87,10 +98,6 @@
   &:active {
     color: @color-black;
     opacity: 0.3;
-  }
-
-  @media (min-width: @tablet-width) {
-    display: block;
   }
 }
 
