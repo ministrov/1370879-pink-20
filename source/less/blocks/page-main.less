@@ -12,16 +12,23 @@
   color: @color-black;
 
   @media (min-width: @tablet-width) {
-    width: 560px;
+    width: 490px;
     margin-top: 91px;
-    margin-left: 50px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 18px;
     line-height: 30px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: auto;
-    margin-right: auto;
+    min-width: 756px;
+  }
+}
+
+.page-main__form {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -30,5 +37,9 @@
 
   @media (min-width: @tablet-width) {
     display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: inline;
   }
 }
