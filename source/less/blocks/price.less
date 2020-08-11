@@ -1,106 +1,77 @@
 .price {
   background-color: @input-grey;
-}
-
-.price__header {
-  height: 94px;
-  background-color: @color-black;
-
-  .price__definition--standard,
-  .price__definition--base,
-  .price__definition--unlimited {
-    border: none;
-  }
-
-  @media (min-width: @tablet-width) {
-    display: flex;
-    width: 460px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 700px;
-    height: 94px;
-    margin-left: 210px;
-  }
+  overflow: hidden;
 }
 
 .price__table {
+  background-color: @color-white;
   border: 2px solid @input-grey;
   border-collapse: collapse;
+}
+
+.price__table-header {
+  padding-top: 20px;
+  padding-left: 102px;
+  padding-right: 89px;
+  padding-bottom: 45px;
+  color: @color-white;
+  background-color: @color-black;
 
   @media (min-width: @tablet-width) {
-    width: 100%;
+    padding: 0;
   }
+}
 
-  @media (min-width: @desktop-width) {
-    width: 100%;
-  }
+.price__emphasazing {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.price__tag {
+  display: block;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 30px;
 }
 
 .price__definition {
-  width: 276px;
-  height: 59px;
-  text-align: center;
-  background-color: @color-white;
+  padding: 20px;
   border: 2px solid @input-grey;
 
   @media (min-width: @tablet-width) {
-    width: 153px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 233px;
+    padding: 30px;
   }
 }
 
-.price__definition--text {
+.price__description {
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
   color: @color-black;
-
-  @media (min-width: @tablet-width) {
-    text-transform: capitalize;
-  }
 }
 
-.price__definition--base {
+.price-closed {
   display: none;
 
   @media (min-width: @tablet-width) {
     display: block;
-    margin: 0;
-    margin-right: 0;
   }
 }
 
-.price__definition--standard {
-  width: 276px;
-  margin: auto;
+.price__icon {
+  display: inline-block;
+  margin-left: 100px;
 
   @media (min-width: @tablet-width) {
-    width: 153px;
-    margin: 0;
-    padding: 0;
+    margin-left: 0;
   }
 }
 
-.price__definition--unlimited {
-  display: none;
-
+.price__hidden {
   @media (min-width: @tablet-width) {
-    display: block;
-    margin: 0;
+    display: none;
   }
-}
-
-.price__definition-title {
-  padding-top: 20px;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 30px;
-  text-transform: uppercase;
-  color: @color-white;
-  background-color: @color-black;
 }
