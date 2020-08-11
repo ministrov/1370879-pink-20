@@ -28,6 +28,7 @@
 
   @media (min-width: @desktop-width) {
     max-width: 50%;
+    margin-right: 74px;
   }
 }
 
@@ -73,8 +74,8 @@
   }
 
   @media (min-width: @desktop-width) {
-
-    margin-left: 120px;
+    width: 100%;
+    padding: 36px 50px;
   }
 }
 
@@ -103,12 +104,18 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 0 45px;
   }
 }
 
 .form__checkbox-item {
   @media (min-width: @tablet-width) {
     margin-top: 69px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    margin-top: 20px;
   }
 }
 
@@ -135,8 +142,8 @@
   @media (min-width: @desktop-width) {
     width: 100%;
     margin: 0;
-    margin-top: 64px;
-    margin-left: 120px;
+    padding: 0;
+    margin-top: 69px;
     border: 2px solid @input-grey;
   }
 }
@@ -192,6 +199,10 @@
     margin-left: 45px;
     order: 1;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 14px;
+  }
 }
 
 .form__radio {
@@ -214,8 +225,11 @@
   }
 
   @media (min-width: @desktop-width) {
-    max-width: 50%;
+    min-width: 431px;
+    max-height: 297px;
     margin: 0;
+    padding: 0;
+    margin-top: 43px;
   }
 }
 
@@ -231,12 +245,14 @@
 
   @media (min-width: @desktop-width) {
     margin: 0;
+    margin-top: 63px;
+    margin-left: 133px;
   }
 }
 
 .form__radio-item {
   @media (min-width: @tablet-width) {
-    margin-bottom: 62px;
+    margin-bottom: 40px;
   }
 }
 
@@ -259,6 +275,12 @@
     padding-bottom: 50px;
     border: 2px solid @input-grey;
     order: 4;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-height: 213px;
+    margin-top: 69px;
+    padding: 44px 60px;
   }
 }
 
@@ -289,7 +311,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    min-height: 124px;
+    width: 816px;
+    margin-top: -48px;
+    margin-left: 0;
   }
 }
 
@@ -334,5 +358,9 @@
     display: flex;
     justify-content: space-between;
     order: 5;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 65px;
   }
 }
