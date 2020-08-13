@@ -1,5 +1,12 @@
 .price {
+  width: 280px;
   background-color: @bg-gallery-storage;
+  overflow: hidden;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+    overflow: visible;
+  }
 }
 
 .price__table {
@@ -60,19 +67,18 @@
 .price__definition {
   padding: 11px;
   border: 2px solid @input-grey;
-  overflow: hidden;
 
   @media (min-width: @tablet-width) {
     &.price-closed {
       padding-top: 9px;
       padding-left: 15px;
-      padding-right: 30px;
+      padding-right: 68px;
       padding-bottom: 5px;
     }
   }
 
   @media (min-width: @desktop-width) {
-    padding-right: 202px;
+    padding-right: 222px;
   }
 }
 
