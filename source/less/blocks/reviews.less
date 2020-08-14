@@ -3,20 +3,56 @@
 }
 
 .reviews__list {
+  padding: 0;
   list-style: none;
 }
 
 .reviews__author {
+  display: block;
   font-size: 18px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 30px;
+  text-align: center;
   color: @black;
 }
 
+.reviews__text {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    max-width: 200px;
+    margin: auto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    color: @color-black;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    max-width: 228px;
+    font-size: 18px;
+  }
+}
+
 .reviews__comment {
+  width: 280px;
+  height: 160px;
+  margin: 0 auto;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
+  text-align: center;
   color: @color-black;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 688px;
+    margin-left: 115px;
+  }
 }

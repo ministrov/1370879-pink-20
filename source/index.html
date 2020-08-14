@@ -25,7 +25,7 @@
                     <a class="main-nav__link" href="photo.html">Фотографии</a>
                   </li>
                   <li class="main-nav__item">
-                    <a class="main-nav__link" href="#">Конкурс</a>
+                    <a class="main-nav__link" href="form.html">Конкурс</a>
                   </li>
                   <li class="main-nav__item">
                     <a class="main-nav__link" href="https://htmlacademy.ru/study">html academy</a>
@@ -36,9 +36,10 @@
         </div>
       </header>
       <main class="page-main">
+          <h1 class="visually-hidden">Сайт фотоприложения для раскрашивания серых будней</h1>
           <section class="intro">
             <div class="intro__wrapper container">
-              <h1 class="visually-hidden">Сайт фотоприложения для раскрашивания серых будней</h1>
+              <h2 class="visually-hidden">Слайдер с продукцией компании Пинк</h2>
               <p class="intro__slogan">Взгляните на жизнь иначе!</p>
               <a class="intro__button button button--white" href="#">Скачать приложение</a>
               <ul class="intro__list">
@@ -65,7 +66,7 @@
           <section class="advantages">
               <div class="advantages__text-wrapper">
                 <h2 class="visually-hidden">Информация о преимуществах</h2>
-                <p class="advantages__text advantages__text--title">Устали от серости мегаполиса?</p>
+                <p class="advantages__text advantages__text--title">Устали от серости <br>мегаполиса?</p>
                 <p class="advantages__text">Нам есть что вам <br>предложить!</p>
               </div>
               <div class="advantages__wrapper container">
@@ -92,36 +93,39 @@
               <ul class="reviews__list slider">
                   <li class="slider__item">
                     <cite class="reviews__author">Николай Петров</cite>
-                    <p class="reviews__comment">«Это приложение перевернуло мой мир <br>
-                        и позволило по-новому взглянуть на <br>
-                        привычные серые вещи! А еще я <br>
-                        познакомился со своей будущей женой <br>
-                        в комментариях к выложенной <br>
+                    <p class="reviews__text">25 лет, водитель трамвая</p>
+                    <p class="reviews__comment">«Это приложение перевернуло мой мир
+                        и позволило по-новому взглянуть на
+                        привычные серые вещи! А еще я
+                        познакомился со своей будущей женой
+                        в комментариях к выложенной
                         фотографии!»
                     </p>
                   </li>
-                  <li class="slider__item">
+                  <li class="slider__item slider__item--second">
                     <cite class="reviews__author">Николай Петров</cite>
-                    <p class="reviews__comment">«Это приложение перевернуло мой мир <br>
-                        и позволило по-новому взглянуть на <br>
-                        привычные серые вещи! А еще я <br>
-                        познакомился со своей будущей женой <br>
-                        в комментариях к выложенной <br>
+                    <p class="reviews__text">25 лет, водитель трамвая</p>
+                    <p class="reviews__comment">«Это приложение перевернуло мой мир
+                        и позволило по-новому взглянуть на
+                        привычные серые вещи! А еще я
+                        познакомился со своей будущей женой
+                        в комментариях к выложенной
                         фотографии!»
                     </p>
                   </li>
-                  <li class="slider__item">
+                  <li class="slider__item slider__item--third">
                     <cite class="reviews__author">Николай Петров</cite>
-                    <p class="reviews__comment">«Это приложение перевернуло мой мир <br>
-                        и позволило по-новому взглянуть на <br>
-                        привычные серые вещи! А еще я <br>
-                        познакомился со своей будущей женой <br>
-                        в комментариях к выложенной <br>
+                    <p class="reviews__text">25 лет, водитель трамвая</p>
+                    <p class="reviews__comment">«Это приложение перевернуло мой мир
+                        и позволило по-новому взглянуть на
+                        привычные серые вещи! А еще я
+                        познакомился со своей будущей женой
+                        в комментариях к выложенной
                         фотографии!»
                     </p>
                   </li>
                 </ul>
-                <div class="toggle">
+                <div class="toggle toggle-reviews">
                   <button class="toggle__btn toggle__btn--current" type="button">
                     <span class="visually-hidden">Первый слайд</span>
                   </button>
@@ -137,30 +141,34 @@
 
           <section class="price">
             <h2 class="visually-hidden">Цены на разные тарифы приложения</h2>
-            <div class="price__wrapper">
+            <div class="price__wrapper container">
                 <table class="price__table">
                   <tr class="price__row">
-                    <td class="price__definition">База <br>1,99 USD</td>
-                    <td class="price__definition">Стандарт <br>3,99 USD</td>
-                    <td class="price__definition">Анлим <br>9,99 USD</td>
+                    <th class="price__table-header price__hidden"></th>
+                    <th class="price__table-header"><b class="price__emphasazing">База</b> <span class="price__tag">1,99 USD</span></th>
+                    <th class="price__table-header"><b class="price__emphasazing">Стандарт</b> <span class="price__tag">3,99 USD</span></th>
+                    <th class="price__table-header"><b class="price__emphasazing">Анлим</b> <span class="price__tag">9,99 USD</span></th>
                   </tr>
                   <tr class="price__row">
-                    <td class="price__definition">Розовый фильтр</td>
-                    <td class="price__definition">Розовый фильтр</td>
-                    <td class="price__definition">Розовый фильтр</td>
+                    <td class="price__definition price__hidden price__title">Розовый фильтр</td>
+                    <td class="price__definition"><span class="price__description">Розовый фильтр</span><span class="price__icon">Есть</span></td>
+                    <td class="price__definition"><span class="price__description">Розовый фильтр</span><span class="price__icon">Есть</span></td>
+                    <td class="price__definition"><span class="price__description">Розовый фильтр</span><span class="price__icon">Есть</span></td>
                   </tr>
                   <tr class="price__row">
-                    <td class="price__definition">Смайлики</td>
-                    <td class="price__definition">Смайлики</td>
-                    <td class="price__definition">Смайлики</td>
+                    <td class="price__definition price__hidden price__title">Смайлики</td>
+                    <td class="price__definition"><span class="price__description">Смайлики</span><span class="price__icon">Нет</span></td>
+                    <td class="price__definition"><span class="price__description">Смайлики</span><span class="price__icon">Нет</span></td>
+                    <td class="price__definition"><span class="price__description">Смайлики</span><span class="price__icon">Нет</span></td>
                   </tr>
                   <tr class="price__row">
-                    <td class="price__definition">Комментарии</td>
-                    <td class="price__definition">Комментарии</td>
-                    <td class="price__definition">Комментарии</td>
+                    <td class="price__definition price__hidden price__title">Комментарии</td>
+                    <td class="price__definition"><span class="price__description">Комментарии</span><span class="price__icon">Есть</span></td>
+                    <td class="price__definition"><span class="price__description">Комментарии</span><span class="price__icon">Есть</span></td>
+                    <td class="price__definition"><span class="price__description">Комментарии</span><span class="price__icon">Есть</span></td>
                   </tr>
                 </table>
-                <div class="toggle">
+                <div class="toggle toggle-price">
                   <button class="toggle__btn" type="button">
                     <span class="visually-hidden">Первый слайд</span>
                   </button>

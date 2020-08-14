@@ -1,14 +1,42 @@
 .gallery-storage {
+  background-color: @color-white;
+}
+
+.gallery-storage__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.gallery-storage__form-wrapper {
   background-color: @bg-gallery-storage;
+}
+
+.gallery-storage__container {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.gallery-storage__header {
+  background-color: @color-white;
 }
 
 .gallery-storage__title {
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
+  text-align: center;
   color: @color-black;
 }
 
 .gallery-storage__list {
   list-style: none;
+}
+
+.gallery-storage__button-wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
 }

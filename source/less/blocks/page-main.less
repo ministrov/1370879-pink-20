@@ -1,46 +1,52 @@
 .page-main {
   outline: @outline-pink;
+  overflow: hidden;
 }
 
 .page-main__text {
+  margin-top: 54px;
+  margin-bottom: 55px;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
+  text-align: center;
   color: @color-black;
+
+  @media (min-width: @tablet-width) {
+    width: 490px;
+    margin-top: 91px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 756px;
+  }
 }
 
-.page-main__button {
-  display: inline-block;
-  min-width: 276px;
-  min-height: 59px;
-  padding: 0;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 30px;
-  text-transform: uppercase;
-  color: @color-white;
-  background-color: @page-main-button-green;
-  box-sizing: border-box;
-  vertical-align: middle;
-  border: 2px solid @page-main-button-green;
-  border-radius: 1px;
-  cursor: pointer;
+.page-main__form {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
-  &:hover,
-  &:focus {
-    background-color: @page-main-button-green-hover;
-    outline: none;
+.page-main__application {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
   }
 
-  &:active {
-    color: @page-main-button-active;
+  @media (min-width: @desktop-width) {
+    display: inline;
   }
+}
 
-  &:disabled {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 30px;
-    color: @color-white;
-    background-color: @input-grey;
+.page-main__transfer {
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }

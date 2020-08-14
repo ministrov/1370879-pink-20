@@ -1,5 +1,6 @@
 .button {
   display: inline-block;
+  min-width: 280px;
   font-family: inherit;
   font-size: 18px;
   font-weight: 700;
@@ -22,9 +23,18 @@
   &:active {
     color: @page-main-button-active;
   }
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 183px;
+  }
 }
 
 .button--grey {
+  min-width: 280px;
   border: 3px solid @color-black;
   color: @color-black01;
   opacity: 0.1;
@@ -40,6 +50,11 @@
     color: @page-main-button-active;
     background-color: @color-black;
     opacity: 0.3;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 183px;
+    margin-left: 10px;
   }
 }
 
@@ -60,5 +75,10 @@
 
   @media (min-width: @tablet-width) {
     display: table;
+    min-width: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 300px;
   }
 }
