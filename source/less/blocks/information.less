@@ -1,0 +1,83 @@
+.information {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @bg-gallery-storage;
+  }
+}
+
+.information__block {
+  @media (min-width: @tablet-width) {
+    position: relative;
+    max-width: 310px;
+    margin-left: auto;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 238px;
+      height: 276px;
+      top: 0;
+      left: -106%;
+      background-image: url("../img/diagram.svg");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      position: absolute;
+      content: "";
+      width: 298px;
+      height: 345px;
+      top: -17%;
+      left: -209%;
+      background-image: url("../img/diagram-desktop.svg");
+    }
+  }
+}
+
+.information__title {
+  @media (min-width: @tablet-width) {
+    max-width: 168px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    color: @black;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 298px;
+  }
+}
+
+.information__text {
+  @media (min-width: @tablet-width) {
+    max-width: 310px;
+    font-size: 14px;
+    line-height: 24px;
+    color: @color-black;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 534px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.information__link {
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 24px;
+    color: @hover-color;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
