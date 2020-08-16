@@ -62,6 +62,10 @@
   &:active {
     background-image: url("../img/close-menu-btn-hover.svg");
   }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .main-nav__list {
@@ -95,17 +99,11 @@
   @media (min-width: @desktop-width) {
     margin-right: 78px;
   }
-}
 
-.main-nav__item:last-child {
   @media (min-width: @desktop-width) {
-    margin-right: 0;
-  }
-}
-
-.main-nav__toggle {
-  @media (min-width: @desktop-width) {
-    display: none;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
