@@ -1,15 +1,20 @@
 .page-header {
   margin: 0;
   background-color: @color-black;
-  outline: 5px solid rgba(0, 255, 0, 0.3);
-  outline-offset: -5px;
 }
 
 .page-header__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding-top: 23px;
+  vertical-align: middle;
   text-decoration: none;
 }
 
 .page-header__wrapper {
+  border-top: 1px solid @black;
+  border-bottom: 1px solid @color-white-opacity;
+
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
