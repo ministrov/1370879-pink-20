@@ -1,6 +1,11 @@
 .page-header {
   margin: 0;
   background-color: @color-black;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .page-header__logo {
@@ -20,5 +25,17 @@
     justify-content: space-between;
     align-items: center;
     min-height: 110px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 440px;
+    margin: 0 auto;
+    border: none;
+  }
+}
+
+.page-header__nav {
+  @media (min-width: @desktop-width) {
+    margin-right: 32px;
   }
 }
