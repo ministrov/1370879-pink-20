@@ -30,22 +30,24 @@
     </head>
     <body class="page-body">
       <header class="page-header">
-          <div class="page-header__wrapper container">
-            <a class="page-header__logo" href="#">
-              <img class="page-header__img" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Пинк сайта фотоприложения для раскрашивания серых будней">
-            </a>
-          </div>
-          <nav class="page-header__nav main-nav main-nav--opened main-nav--nojs">
-            <button class="main-nav__toggle" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
-            <div class="main-nav__wrapper">
+          <nav class="main-nav main-nav--closed main-nav--nojs">
+            <div class="main-nav__logo-wrapper container">
+              <a class="main-nav__logo">
+                <img class="page-header__img" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Пинк сайта фотоприложения для раскрашивания серых будней">
+              </a>
+            </div>
+            <div class="main-nav__toggle-wrapper">
+              <button class="main-nav__toggle" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+              </button>
+            </div>
+            <div class="main-nav__list-wrapper">
               <ul class="main-nav__list">
                   <li class="main-nav__item">
-                    <a class="main-nav__link" href="index.html">Главная</a>
+                    <a class="main-nav__link">Главная</a>
                   </li>
                   <li class="main-nav__item">
-                    <a class="main-nav__link" href="photo.html">Фотографии</a>
+                    <a class="main-nav__link main-nav__link--active" href="photo.html">Фотографии</a>
                   </li>
                   <li class="main-nav__item">
                     <a class="main-nav__link" href="form.html">Конкурс</a>
@@ -240,9 +242,9 @@
               <img class="page-footer__img" src="img/bg-map-mobile@1x.png" width="320" height="200" alt="Подробная карта проезда до офиса разработчиков приложения Пинк">
             </div>
             <div class="wrapper-bottom container">
-            <div class="page-footer-logo">
-              <a class="page-footer-logo__link" href="#">
-                <img class="page-footer-logo__img" src="img/logo-pink-blue-mobile.svg" width="145" height="40" alt="Логотип компании Пинк">
+            <div class="page-footer__logo">
+              <a class="page-footer__logo-link" href="#">
+                <img class="page-footer__logo-img" src="img/logo-pink-blue-mobile.svg" width="145" height="40" alt="Логотип компании Пинк">
               </a>
             </div>
             <div class="social">
@@ -273,5 +275,6 @@
           </div>
           </div>
       </footer>
+      <script src="js/script-menu.js"></script>
     </body>
 </html>
