@@ -29,6 +29,11 @@
     line-height: 30px;
     text-align: center;
   }
+
+  @media (min-width: @desktop-width) {
+    max-width: 672px;
+    padding-bottom: 90px;
+  }
 }
 
 .gallery__list {
@@ -48,7 +53,9 @@
 
   @media (min-width: @desktop-width) {
     justify-content: flex-start;
-    margin-left: -20px;
+    margin-top: 52px;
+    margin-left: 0;
+    margin-right: -28px;
   }
 }
 
@@ -78,7 +85,15 @@
   }
 
   @media (min-width: @desktop-width) {
+    min-height: 555px;
     margin-right: 20px;
+
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6) {
+      margin-top: 33px;
+      padding-bottom: 13px;
+    }
   }
 }
 
@@ -97,7 +112,7 @@
 
   @media (min-width: @desktop-width) {
     width: 940px;
-    margin: 0 auto;
+    padding-top: 17px;
   }
 }
 
@@ -116,6 +131,10 @@
   @media (min-width: @tablet-width) {
     width: 300px;
     height: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 400px;
   }
 }
 
@@ -152,6 +171,10 @@
 
   @media (min-width: @tablet-width) {
     margin-left: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
   }
 }
 

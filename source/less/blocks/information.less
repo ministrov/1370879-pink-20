@@ -6,6 +6,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    padding-top: 107px;
     background-color: @bg-gallery-storage;
   }
 }
@@ -29,18 +30,20 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 125px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 56px;
+    position: relative;
+    margin-top: 0;
+    margin-left: 0;
+    padding-left: 370px;
+    padding-right: 45px;
+    max-width: 100%;
 
     &::before {
       position: absolute;
       content: "";
       width: 298px;
       height: 345px;
-      top: -52%;
-      left: -101%;
+      top: -90px;
+      left: 0;
       background-image: url("../img/diagram-desktop.svg");
     }
   }
@@ -56,7 +59,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    min-width: 298px;
+    max-width: 100%;
+    margin: 0;
   }
 }
 
@@ -71,7 +75,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    min-width: 534px;
+    margin-top: 25px;
+    max-width: 100%;
     font-size: 18px;
     line-height: 30px;
   }
