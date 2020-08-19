@@ -1,6 +1,6 @@
 .intro {
   position: relative;
-  padding-bottom: 9px;
+  padding-bottom: 12px;
   text-align: center;
   background-color: @bg-intro;
   background-image: url("../img/bg-back-mobile@1x.jpg");
@@ -28,8 +28,8 @@
       content: "";
       width: 660px;
       height: 545px;
-      top: 142px;
-      left: 4px;
+      top: 73px;
+      left: -18px;
       background-image: url("../img/iphone-hand-tablet@1x.png");
       background-repeat: no-repeat;
     }
@@ -63,7 +63,9 @@
 
   @media (min-width: @tablet-width) {
     max-width: 300px;
-    padding-top: 133px;
+    padding-top: 93px;
+    padding-left: 54px;
+    padding-right: 52px;
     font-size: 40px;
     line-height: 1.2;
     text-align: center;
@@ -140,6 +142,13 @@
     background-repeat: no-repeat;
   }
 
+  @media (min-width: @tablet-width) {
+    &::before {
+      top: 13px;
+      left: 32px;
+    }
+  }
+
   @media (min-width: @desktop-width) {
     &::before {
       top: 22px;
@@ -159,6 +168,13 @@
     left: 15%;
     background-image: url("../img/android-logo.svg");
     background-repeat: no-repeat;
+  }
+
+  @media (min-width: @tablet-width) {
+    &::before {
+      top: 28%;
+      left: 28%;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -182,6 +198,13 @@
     background-repeat: no-repeat;
   }
 
+  @media (min-width: @tablet-width) {
+    &::before {
+      top: 36%;
+      left: 2%;
+    }
+  }
+
   @media (min-width: @desktop-width) {
     &::before {
       top: 58%;
@@ -192,12 +215,19 @@
 
 .intro__text {
   max-width: 280px;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 17px;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
   color: @color-white;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 90px;
+    max-width: 300px;
+    margin-bottom: 99px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
   }
 }

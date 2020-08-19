@@ -15,6 +15,11 @@
   line-height: 30px;
   text-align: center;
   color: @black;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -22px;
+    letter-spacing: 1px;
+  }
 }
 
 .reviews__text {
@@ -28,6 +33,7 @@
     font-weight: 400;
     line-height: 30px;
     color: @color-black;
+    order: -1;
   }
 
   @media (min-width: @desktop-width) {
@@ -50,6 +56,8 @@
 
   @media (min-width: @tablet-width) {
     width: 620px;
+    font-size: 18px;
+    line-height: 30px;
   }
 
   @media (min-width: @desktop-width) {

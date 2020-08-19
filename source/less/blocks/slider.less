@@ -1,5 +1,10 @@
 .slider__item {
   margin-top: 20px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 .slider__item--second {

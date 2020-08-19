@@ -61,6 +61,10 @@
   @media (min-width: @desktop-width) {
     max-width: 100%;
     margin: 0;
+
+    br {
+      display: none;
+    }
   }
 }
 
@@ -79,13 +83,17 @@
     max-width: 100%;
     font-size: 18px;
     line-height: 30px;
+
+    br {
+      display: none;
+    }
   }
 }
 
 .information__link {
   @media (min-width: @tablet-width) {
     display: inline-block;
-    margin-top: 12px;
+    margin-top: 9px;
     font-size: 14px;
     line-height: 24px;
     color: @hover-color;
