@@ -24,11 +24,20 @@
 }
 
 .gallery-storage__title {
+  margin-top: 34px;
+  margin-bottom: 64px;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
   text-align: center;
   color: @color-black;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 64px;
+    margin-bottom: 69px;
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .gallery-storage__list {
@@ -38,5 +47,6 @@
 .gallery-storage__button-wrapper {
   @media (min-width: @desktop-width) {
     display: flex;
+    margin-top: 119px;
   }
 }
