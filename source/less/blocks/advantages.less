@@ -1,5 +1,37 @@
 .advantages {
+  position: relative;
   background-color: @bg-gallery-storage;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 64px;
+    top: 139px;
+    left: 0;
+    background-color: @color-white;
+    background-image: url("../img/grey-background@1x.png");
+    background-position: 0 -11px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media (min-width: @tablet-width) {
+    &::after {
+      width: 100%;
+      height: 90px;
+      top: 146px;
+      background-position: 0 -66px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      height: 205px;
+      top: 179px;
+      background-position: 0 -170px;
+    }
+  }
 }
 
 .advantages__text {
@@ -64,17 +96,20 @@
   position: relative;
   margin: 0;
   padding: 0;
-  margin-top: 114px;
+  margin-top: 82px;
   list-style: none;
   text-align: center;
+  overflow: hidden;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    position: relative;
     margin: 0;
-    margin-top: 118px;
+    padding-top: 90px;
     text-align: left;
+    z-index: 1000;
 
     &::before {
       position: absolute;
@@ -94,7 +129,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0;
-    margin-top: 51px;
+    margin-top: -4px;
+    padding-top: 0;
 
     &::before {
       position: absolute;
@@ -108,7 +144,7 @@
   margin-top: 33px;
 
   &:last-child {
-    padding-bottom: 320px;
+    padding-bottom: 310px;
   }
 
   &:last-child::before {
@@ -262,4 +298,8 @@
 .advantages__text-wrapper {
   margin-bottom: 27px;
   background-color: @color-white;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 54px;
+  }
 }
