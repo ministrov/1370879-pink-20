@@ -1,11 +1,15 @@
 .page-header {
+  min-height: 66px;
   margin: 0;
   background-color: @color-black;
+
+  @media (min-width: @tablet-width) {
+    min-height: 110px;
+  }
 
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-around;
-    min-height: 110px;
   }
 }
 
