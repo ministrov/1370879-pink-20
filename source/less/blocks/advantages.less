@@ -2,20 +2,6 @@
   position: relative;
   background-color: @bg-gallery-storage;
 
-  &::after {
-    position: absolute;
-    content: "";
-    width: 320px;
-    height: 64px;
-    top: 139px;
-    left: 0;
-    background-color: @color-white;
-    background-image: url("../img/grey-background@1x.png");
-    background-position: 0 -11px;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
   @media (min-width: @tablet-width) {
     &::after {
       width: 100%;
@@ -280,12 +266,12 @@
 
 .advantages__description {
   font-size: 14px;
-  line-height: 21px;
+  line-height: 24px;
   color: @color-black;
 
   @media (min-width: @desktop-width) {
     margin: 0;
-    margin-top: 25px;
+    margin-top: 28px;
     min-width: 100%;
     min-height: 170px;
     font-size: 18px;
@@ -298,6 +284,20 @@
 .advantages__text-wrapper {
   margin-bottom: 27px;
   background-color: @color-white;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 64px;
+    top: 139px;
+    left: 0;
+    background-image: url("../img/bg-triangle-white.svg");
+    background-position: 0 -11px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
 
   @media (min-width: @desktop-width) {
     margin-bottom: 54px;
