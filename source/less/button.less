@@ -1,6 +1,6 @@
 .button {
   display: inline-block;
-  max-width: 280px;
+  width: 280px;
   font-family: inherit;
   font-size: 18px;
   font-weight: 700;
@@ -22,12 +22,19 @@
   &:active {
     color: @page-main-button-active;
   }
+
+  @media (min-width: @tablet-width) {
+    width: 260px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 183px;
+  }
 }
 
 .button--grey {
-  max-width: 280px;
+  width: 280px;
   margin: 0;
-  margin-bottom: 41px;
   border: 3px solid @color-black;
   color: @color-black01;
   opacity: 0.1;
@@ -45,8 +52,12 @@
     opacity: 0.3;
   }
 
+  @media (min-width: @tablet-width) {
+    width: 260px;
+  }
+
   @media (min-width: @desktop-width) {
-    min-width: 183px;
+    width: 183px;
     margin-left: 10px;
   }
 }

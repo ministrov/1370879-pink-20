@@ -21,8 +21,7 @@
 }
 
 .advantages__text {
-  margin: 0;
-  margin-top: 41px;
+  margin: 41px 0 0;
   padding-left: 20px;
   padding-right: 20px;
   font-size: 24px;
@@ -63,8 +62,7 @@
 }
 
 .advantages__text--lower {
-  margin: 0;
-  margin-top: 31px;
+  margin: 31px 0 0;
   line-height: 28px;
 
   @media (min-width: @tablet-width) {
@@ -113,9 +111,9 @@
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
-    margin: 0;
-    margin-top: -4px;
+    margin: -4px 0 0;
     padding-top: 0;
 
     &::before {
@@ -152,8 +150,7 @@
 
   @media (min-width: @tablet-width) {
     width: 50%;
-    margin: 0;
-    margin-top: 6px;
+    margin: 6px 0 0;
 
     &:first-child {
       margin-top: -28px;
@@ -167,9 +164,8 @@
 
   @media (min-width: @desktop-width) {
     position: relative;
-    margin-right: 5%;
+    width: 300px;
     padding-top: 330px;
-    width: 30%;
     text-align: center;
 
     &:nth-child(3n) {
@@ -183,7 +179,7 @@
       width: 268px;
       height: 386px;
       top: 0;
-      left: 0;
+      left: 122px;
       background-image: url("../img/iphone-screen-3-desktop@1x.png");
       background-repeat: no-repeat;
     }
@@ -264,15 +260,13 @@
   }
 }
 
-
 .advantages__description {
   font-size: 14px;
   line-height: 24px;
   color: @color-black;
 
   @media (min-width: @desktop-width) {
-    margin: 0;
-    margin-top: 28px;
+    margin: 28px 0 0;
     min-width: 100%;
     min-height: 170px;
     font-size: 18px;
@@ -306,14 +300,13 @@
     }
   }
 
-
   @media (min-width: @desktop-width) {
     margin-bottom: 54px;
 
     &::after {
       width: 100%;
       height: 184px;
-      top: 145px;
+      top: 180px;
     }
   }
 }
