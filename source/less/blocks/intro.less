@@ -13,7 +13,7 @@
     content: "";
     width: 320px;
     height: 286px;
-    top: 17%;
+    top: 192px;
     left: 50%;
     background-image: url("../img/iphone-hand-mobile@1x.png");
     background-repeat: no-repeat;
@@ -22,6 +22,7 @@
   }
 
   @media (min-width: @tablet-width) {
+    padding-bottom: 9px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-size: 100% 100%;
 
@@ -30,8 +31,8 @@
       content: "";
       width: 660px;
       height: 545px;
-      top: 20%;
-      left: 75%;
+      top: 25%;
+      left: 72%;
       background-image: url("../img/iphone-hand-tablet@1x.png");
       background-repeat: no-repeat;
       transform: translate(-75%);
@@ -48,8 +49,8 @@
       content: "";
       width: 884px;
       height: 645px;
-      top: 20%;
-      left: 75%;
+      top: 24%;
+      left: 64%;
       background-image: url("../img/iphone-hand-desktop@1x.png");
       background-repeat: no-repeat;
       transform: translate(-75%);
@@ -72,11 +73,10 @@
 }
 
 .intro__slogan {
-  margin: 0;
-  padding-top: 25px;
-  padding-bottom: 244px;
-
   width: 280px;
+  margin: 0;
+  padding-top: 108px;
+  padding-bottom: 338px;
   font-size: 24px;
   font-weight: 300;
   line-height: 26px;
@@ -85,7 +85,7 @@
   @media (min-width: @tablet-width) {
     width: auto;
     max-width: 300px;
-    padding-top: 93px;
+    padding-top: 203px;
     padding-left: 54px;
     padding-right: 52px;
     padding-bottom: 0;
@@ -98,7 +98,7 @@
     width: 300px;
     margin: 0;
     padding: 0;
-    padding-top: 99px;
+    padding-top: 209px;
     font-size: 50px;
     line-height: 68px;
   }
@@ -147,16 +147,13 @@
 
 .intro__button {
   margin: 0;
-  margin-top: 103px;
-  padding-top: 2px;
-  padding-bottom: 2px;
+  margin-top: 10px;
   padding-left: 35px;
   padding-right: 36px;
 
   @media (min-width: @tablet-width) {
     position: relative;
-    margin-top: 39px;
-    margin-bottom: 44px;
+    margin-top: 31px;
   }
 }
 
@@ -175,15 +172,15 @@
 
   @media (min-width: @tablet-width) {
     &::before {
-      top: 13px;
-      left: 32px;
+      top: 16px;
+      left: 46px;
     }
   }
 
   @media (min-width: @desktop-width) {
     &::before {
       top: 37px;
-      left: 53%;
+      left: 79%;
     }
   }
 }
@@ -203,15 +200,15 @@
 
   @media (min-width: @tablet-width) {
     &::before {
-      top: 28%;
-      left: 28%;
+      top: 31%;
+      left: 54%;
     }
   }
 
   @media (min-width: @desktop-width) {
     &::before {
       top: 72%;
-      left: 28%;
+      left: 53%;
     }
   }
 }
@@ -231,15 +228,15 @@
 
   @media (min-width: @tablet-width) {
     &::before {
-      top: 36%;
-      left: 2%;
+      top: 42%;
+      left: 24%;
     }
   }
 
   @media (min-width: @desktop-width) {
     &::before {
-      top: 81%;
-      left: 4%;
+      top: 79%;
+      left: 30%;
     }
   }
 }
@@ -247,7 +244,7 @@
 .intro__text {
   max-width: 280px;
   margin: 0;
-  margin-top: 10px;
+  margin-top: 14px;
   margin-bottom: 17px;
   font-size: 14px;
   font-weight: 300;
@@ -257,13 +254,14 @@
   @media (min-width: @tablet-width) {
     position: relative;
     max-width: 300px;
-    margin-bottom: 99px;
+    margin-top: -3px;
+    margin-bottom: 105px;
     font-size: 18px;
     line-height: 24px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 80px;
+    margin-top: 14px;
     margin-bottom: 89px;
   }
 }

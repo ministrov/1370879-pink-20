@@ -21,7 +21,6 @@
 }
 
 .advantages__text {
-  margin: 41px 0 0;
   padding-left: 20px;
   padding-right: 20px;
   font-size: 24px;
@@ -44,7 +43,7 @@
 }
 
 .advantages__text--title {
-  margin-top: 46px;
+  margin-top: 44px;
   line-height: 27px;
 
   @media (min-width: @tablet-width) {
@@ -92,6 +91,7 @@
     position: relative;
     margin: 0;
     padding-top: 90px;
+    padding-bottom: 25px;
     text-align: left;
     z-index: 1000;
 
@@ -101,7 +101,7 @@
       content: "";
       width: 268px;
       height: 481px;
-      bottom: -29px;
+      bottom: 0;
       left: 0;
       background-image: url("../img/iphone-screen-3-tablet@1x.png");
       background-repeat: no-repeat;
@@ -128,7 +128,7 @@
   margin-top: 33px;
 
   &:last-child {
-    padding-bottom: 310px;
+    padding-bottom: 302px;
   }
 
   &:last-child::before {
@@ -137,7 +137,7 @@
     content: "";
     width: 160px;
     height: 320px;
-    top: 152px;
+    top: 147px;
     left: 50%;
     background-image: url("../img/iphone-screen-mobile@1x.png");
     background-repeat: no-repeat;
@@ -179,7 +179,7 @@
       width: 268px;
       height: 386px;
       top: 0;
-      left: 122px;
+      left: 144px;
       background-image: url("../img/iphone-screen-3-desktop@1x.png");
       background-repeat: no-repeat;
     }
@@ -191,7 +191,7 @@
       width: 268px;
       height: 386px;
       top: 0;
-      left: 0;
+      left: 8px;
       background-image: url("../img/iphone-screen-2-desktop@1x.png");
       background-repeat: no-repeat;
     }
@@ -202,8 +202,8 @@
       content: "";
       width: 268px;
       height: 386px;
-      top: 0;
-      left: 0;
+      top: 4px;
+      left: 6px;
       background-image: url("../img/iphone-screen-1-desktop@1x.png");
       background-repeat: no-repeat;
     }
@@ -226,41 +226,37 @@
   }
 }
 
-.advantages__item:first-child .advantages__title {
-  @media (min-width: @desktop-width) {
-    padding-left: 15px;
-  }
-}
-
 .advantages__item:nth-child(3) .advantages__title {
   @media (min-width: @desktop-width) {
-    padding-left: 15px;
+    padding-left: 36px;
     padding-right: 35px;
   }
 }
 
 .advantages__item:first-child .advantages__description {
   @media (min-width: @desktop-width) {
-    padding-left: 28px;
-    padding-right: 10px;
+    margin-bottom: 3px;
+    padding-left: 27px;
+    padding-right: 27px;
   }
 }
 
 .advantages__item:nth-child(2) .advantages__description {
   @media (min-width: @desktop-width) {
-    padding-left: 22px;
-    padding-right: 22px;
+    padding-left: 29px;
+    padding-right: 28px;
   }
 }
 
 .advantages__item:nth-child(3) .advantages__description {
   @media (min-width: @desktop-width) {
-    padding-left: 11px;
-    padding-right: 27px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
 .advantages__description {
+  margin-top: -7px;
   font-size: 14px;
   line-height: 24px;
   color: @color-black;
@@ -284,7 +280,7 @@
     position: absolute;
     content: "";
     width: 320px;
-    height: 64px;
+    height: 73px;
     top: 139px;
     left: 0;
     background-image: url("../img/bg-triangle-white.svg");
@@ -296,6 +292,7 @@
   @media (min-width: @tablet-width) {
     &::after {
       width: 660px;
+      height: 96px;
       top: 145px;
     }
   }
@@ -305,8 +302,8 @@
 
     &::after {
       width: 100%;
-      height: 184px;
-      top: 180px;
+      height: 182px;
+      top: 174px;
     }
   }
 }

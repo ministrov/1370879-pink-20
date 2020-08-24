@@ -102,7 +102,6 @@
   @media (min-width: @desktop-width) {
     display: flex;
     margin-top: 44px;
-    margin-left: 50px;
     margin-right: 11px;
   }
 }
@@ -118,6 +117,7 @@
   @media (min-width: @desktop-width) {
     margin-right: 78px;
     padding: 0;
+    background-color: transparent;
     border: none;
   }
 
@@ -203,4 +203,16 @@
 
 .main-nav--nojs .main-nav__list-wrapper {
   display: block;
+}
+
+.main-nav--closed {
+  background-color: @color-black01;
+}
+
+.main-nav--opened {
+  background-color: @color-black;
+
+  .main-nav__logo-wrapper {
+    min-height: 69px;
+  }
 }

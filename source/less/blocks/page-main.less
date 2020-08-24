@@ -1,5 +1,12 @@
 .page-main {
+  position: relative;
+  margin-top: -82px;
+  z-index: 10;
   overflow: hidden;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -110px;
+  }
 }
 
 .page-main__text {
@@ -57,15 +64,14 @@
 
 .page-main__information {
   @media (min-width: @tablet-width) {
-    margin-top: 126px;
-    margin-bottom: 109px;
+    margin-top: 96px;
+    margin-bottom: 176px;
   }
 
   @media (min-width: @desktop-width) {
     margin-top: 0;
-    margin-bottom: 176px;
-    padding-top: 105px;
-    padding-bottom: 110px;
+    padding-top: 78px;
+    padding-bottom: 111px;
   }
 }
 
