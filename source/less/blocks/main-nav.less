@@ -5,7 +5,7 @@
 
   @media (min-width: @desktop-width) {
     display: flex;
-    max-width: 960px;
+    width: 100%;
   }
 }
 
@@ -85,6 +85,7 @@
 
   @media (min-width: @desktop-width) {
     display: flex;
+    margin-left: 174px;
   }
 }
 
@@ -168,12 +169,20 @@
 
 .main-nav__logo {
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 24px;
+  padding-left: 20px;
+  padding-bottom: 16px;
   vertical-align: middle;
 
   @media (min-width: @tablet-width) {
     margin-top: 43px;
-    margin-left: 0;
+    margin-left: 91px;
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 363px;
   }
 }
 
@@ -211,8 +220,4 @@
 
 .main-nav--opened {
   background-color: @color-black;
-
-  .main-nav__logo-wrapper {
-    min-height: 69px;
-  }
 }

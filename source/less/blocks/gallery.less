@@ -23,7 +23,7 @@
 
   @media (min-width: @tablet-width) {
     margin: 0;
-    padding-top: 90px;
+    padding-top: 92px;
     padding-bottom: 77px;
     padding-left: 83px;
     padding-right: 81px;
@@ -40,6 +40,8 @@
 }
 
 .gallery__list {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   margin-top: 21px;
   padding: 0;
@@ -58,46 +60,17 @@
     justify-content: flex-start;
     margin-top: 51px;
     margin-left: 0;
-    margin-right: -28px;
   }
 }
 
 .gallery__item {
   margin-bottom: 20px;
   padding-bottom: 20px;
-  background-color: @bg-gallery-storage;
-
-  &:nth-child(4) {
-    margin-top: 23px;
-  }
-
-  &:last-child {
-    margin-top: 17px;
-  }
-
-  @media (min-width: @tablet-width) {
-    max-width: 300px;
-    max-height: 455px;
-
-    &:nth-child(4) {
-      margin-top: 0;
-    }
-
-    &:last-child {
-      margin-top: 0;
-    }
-  }
+  max-width: 300px;
+  background-color: tomato;
 
   @media (min-width: @desktop-width) {
-    min-height: 555px;
     margin-right: 20px;
-
-    &:nth-child(4),
-    &:nth-child(5),
-    &:nth-child(6) {
-      margin-top: 33px;
-      padding-bottom: 13px;
-    }
   }
 }
 
@@ -111,7 +84,7 @@
   right: 20px;
 
   @media (min-width: @tablet-width) {
-    top: 60px;
+    top: 58px;
     right: 20px;
   }
 
@@ -138,7 +111,7 @@
   position: relative;
   width: 280px;
   margin: 0 auto;
-  margin-top: -9px;
+  margin-top: -7px;
   padding-bottom: 18px;
   background-color: @bg-gallery-storage;
 
@@ -147,8 +120,8 @@
     content: "";
     width: 13px;
     height: 12px;
-    top: 159px;
-    left: 21px;
+    top: 31px;
+    right: 31px;
     background-image: url("../img/icon-heart.svg");
   }
 
@@ -156,7 +129,8 @@
     position: relative;
     width: 620px;
     margin: 0 auto;
-    margin-top: -27px;
+    margin-top: -25px;
+    padding-bottom: 26px;
   }
 
   @media (min-width: @desktop-width) {
@@ -189,97 +163,52 @@
 }
 
 .gallery__author {
-  display: inline-block;
-  margin-top: 21px;
+  display: block;
+  margin-top: 10px;
   margin-left: 17px;
   font-size: 14px;
   font-weight: bold;
   line-height: 24px;
+  vertical-align: middle;
   color: @color-black;
 
   @media (min-width: @tablet-width) {
     display: block;
+    margin-top: 0;
     margin-left: 30px;
-    padding-top: 24px;
   }
 
   @media (min-width: @desktop-width) {
+    margin-top: 0;
     margin-left: 27px;
   }
 }
 
 .gallery__author--anna {
-  @media (min-width: @desktop-width) {
-    margin-top: 26px;
-    padding-top: 22px;
-  }
-}
-
-.gallery__author--levon {
-  @media (min-width: @desktop-width) {
-    margin-top: 16px;
-    padding-top: 0;
-  }
-}
-
-.gallery__author--anton {
-  @media (min-width: @desktop-width) {
-    margin-top: 17px;
-    padding-top: 0;
-  }
-}
-
-.gallery__author--boris {
-  @media (min-width: @desktop-width) {
-    margin-top: 17px;
-    padding-top: 0;
-  }
-}
-
-.gallery__author--sergey {
-  @media (min-width: @desktop-width) {
-    margin-top: 18px;
-    padding-top: 0;
-  }
-}
-
-.gallery__author--maxim {
-  @media (min-width: @desktop-width) {
-    margin-top: 18px;
-    padding-top: 0;
-  }
-}
-
-.gallery__author--nadezhda {
-  @media (min-width: @desktop-width) {
-    margin-top: 18px;
-    padding-top: 0;
-  }
+  margin-top: 0;
+  padding-top: 18px;
 }
 
 .gallery__time {
+  display: inline-block;
+  margin-left: 3px;
   font-size: 12px;
   font-weight: 300;
   line-height: 24px;
   text-transform: uppercase;
   color: @color-black;
-
-  @media (min-width: @tablet-width) {
-    margin-left: 3px;
-  }
 }
 
 .gallery__comment {
   margin: 0;
   padding-left: 18px;
-  padding-right: 12px;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   color: @color-black;
 
   @media (min-width: @tablet-width) {
-    padding-left: 31px;
+    min-height: 60px;
   }
 
   @media (min-width: @desktop-width) {
@@ -288,17 +217,8 @@
 }
 
 .gallery__icon-wrapper {
-  position: absolute;
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 13px;
-    height: 12px;
-    top: 6px;
-    left: 21px;
-    background-image: url("../img/icon-heart.svg");
-  }
+  position: relative;
+  margin-top: 11px;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -308,8 +228,11 @@
 }
 
 .gallery__heart {
-  color: @hover-color;
-  opacity: 0;
+  background-color: transparent;
+  border: none;
+  fill: @hover-color;
+  margin-left: 17px;
+  padding: 0;
 
   @media (min-width: @tablet-width) {
     margin-left: 30px;
@@ -367,6 +290,7 @@
 }
 
 .gallery__like {
+  margin-left: 13px;
   font-size: 12px;
   font-weight: 400;
   line-height: 24px;
@@ -391,8 +315,8 @@
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: 20%;
-    left: 76%;
+    top: 14%;
+    right: 59px;
     font-size: 12px;
     line-height: 24px;
   }
@@ -400,47 +324,5 @@
   @media (min-width: @desktop-width) {
     top: 24%;
     left: 84%;
-  }
-}
-
-.gallery__like--first {
-  @media (min-width: @desktop-width) {
-    margin-top: 14px;
-    margin-left: 8px;
-  }
-}
-
-.gallery__like--second {
-  @media (min-width: @desktop-width) {
-    margin-top: 36px;
-    margin-left: 14px;
-  }
-}
-
-.gallery__like--third {
-  @media (min-width: @desktop-width) {
-    margin-top: 12px;
-    margin-left: 12px;
-  }
-}
-
-.gallery__like--fourth {
-  @media (min-width: @desktop-width) {
-    margin-top: 36px;
-    margin-left: 13px;
-  }
-}
-
-.gallery__like--fifth {
-  @media (min-width: @desktop-width) {
-    margin-top: 36px;
-    margin-left: 14px;
-  }
-}
-
-.gallery__like--sixth {
-  @media (min-width: @desktop-width) {
-    margin-top: 36px;
-    margin-left: 34px;
   }
 }
