@@ -39,7 +39,7 @@
       -->
 
       <header class="page-header">
-          <nav class="main-nav main-nav--opened main-nav--nojs">
+          <nav class="main-nav main-nav--closed main-nav--nojs">
               <a class="main-nav__logo" href="index.html">
                 <img class="page-header__img" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Пинк сайта фотоприложения для раскрашивания серых будней">
               </a>
@@ -68,24 +68,26 @@
       </header>
 
       <main class="page-main">
-        <h1 class="visually-hidden">Страница фльлгадерии придложения Пинк</h1>
+        <h1 class="visually-hidden">Страница фотогалереи придложения Пинк</h1>
           <div class="page-main__intro intro intro-photo">
             <p class="intro__slogan intro-slogan-form">Фотографии <br>пользователей</p>
           </div>
 
             <section class="gallery">
-              <p class="gallery__text">Взгляните на фотографии,которые выкладывают пользователи!Видите,как не хватает ваших?</p>
+              <p class="gallery__text">Взгляните на фотографии,которые выкладывают пользователи! <br>Видите,как не хватает ваших?</p>
               <div class="gallery__head-item">
+                <div class="gallery__panarama-view-wrapper">
                 <a class="gallery__link" href="#">
                   <img class="gallery__head-img" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фотография пользователя Анны перед прыжком с моста">
                 </a>
                 <div class="gallery__panorama">
                   <span class="gallery__label">панорама дня</span>
                 </div>
+                </div>
                 <div class="gallery__content-wrapper">
                   <span class="gallery__author gallery__author--anna">Анна<time class="gallery__time" datetime="2020-07-24T18:18">(5 минут назад)</time></span>
                   <p class="gallery__comment">Прыгать или нет? Напишите в комментарии свой совет и<br> смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-                  <button class="gallery__heart gallery__heart--content" type="button">heart</button> <span class="gallery__like gallery__like--content">Нравится: 215</span>
+                  <button class="gallery__heart gallery__heart--content" type="button"></button> <span class="gallery__like gallery__like--content">Нравится: 215</span>
                 </div>
               </div>
               <div class="gallery-wrapper container">
@@ -94,8 +96,8 @@
                   <a class="gallery__link" href="#">
                     <img class="gallery__img" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя Левон">
                   </a>
-                  <span class="gallery__author gallery__author--levon">Левон<time class="gallery__time" datetime="2020-02-24T11:18">(5 часов назад)</time></span>
-                  <p class="gallery__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                  <span class="gallery__author">Левон<time class="gallery__time" datetime="2020-02-24T11:18">(5 часов назад)</time></span>
+                  <p class="gallery__comment gallery__comment--levon">Вчера он на луну летал, сегодня в руки к нам попал.</p>
                   <div class="gallery__icon-wrapper">
                     <button class="gallery__heart" type="button" aria-label="Кнопка сердце">
                       <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
@@ -111,7 +113,7 @@
                   <a class="gallery__link" href="#">
                     <img class="gallery__img" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фотография барабанной установки пользователя Антона">
                   </a>
-                  <span class="gallery__author gallery__author--anton">Антон<time class="gallery__time" datetime="2020-08-24T18:18">(12 часов назад)</time></span>
+                  <span class="gallery__author">Антон<time class="gallery__time" datetime="2020-08-24T18:18">(12 часов назад)</time></span>
                   <p class="gallery__comment">Соседи будут рады!</p>
                   <div class="gallery__icon-wrapper">
                     <button class="gallery__heart" type="button" aria-label="Кнопка сердце">
@@ -128,7 +130,7 @@
                   <a class="gallery__link" href="#">
                     <img class="gallery__img" src="img/photo-3-tablet.jpg" width="280" height="180" alt="Фотография решетки пользователя Бориса">
                   </a>
-                  <span class="gallery__author gallery__author--boris">Борис<time class="gallery__time" datetime="2020-12-24T18:18">(20 часов назад)</time></span>
+                  <span class="gallery__author">Борис<time class="gallery__time" datetime="2020-12-24T18:18">(20 часов назад)</time></span>
                   <p class="gallery__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
                   <div class="gallery__icon-wrapper">
                     <button class="gallery__heart" type="button" aria-label="Кнопка сердце">
@@ -138,14 +140,14 @@
                         </g>
                       </svg>
                     </button>
-                    <span class="gallery__like gallery__like--third">Нравится: 215</span>
+                    <span class="gallery__like">Нравится: 215</span>
                   </div>
                 </li>
                 <li class="gallery__item">
                   <a class="gallery__link" href="#">
                     <img class="gallery__img" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя Сергей на Кубанском рынке">
                   </a>
-                  <span class="gallery__author gallery__author--sergey">Сергей<time class="gallery__time" datetime="2020-11-24T18:18">(25 часов назад)</time></span>
+                  <span class="gallery__author">Сергей<time class="gallery__time" datetime="2020-11-24T18:18">(25 часов назад)</time></span>
                   <p class="gallery__comment">Самая кубанская в мире!</p>
                   <div class="gallery__icon-wrapper">
                     <button class="gallery__heart " type="button" >
@@ -155,14 +157,14 @@
                         </g>
                       </svg>
                     </button>
-                    <span class="gallery__like gallery__like--fourth">Нравится: 4</span>
+                    <span class="gallery__like">Нравится: 4</span>
                   </div>
                 </li>
                 <li class="gallery__item">
                   <a class="gallery__link" href="#">
                     <img class="gallery__img" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя Максима,который сидит на горе">
                   </a>
-                  <span class="gallery__author gallery__author--maxim">Максим<time class="gallery__time" datetime="2020-06-24T18:18">(40 часов назад)</time></span>
+                  <span class="gallery__author">Максим<time class="gallery__time" datetime="2020-06-24T18:18">(40 часов назад)</time></span>
                   <p class="gallery__comment">Где снег-то?</p>
                   <div class="gallery__icon-wrapper">
                     <button class="gallery__heart" type="button">
@@ -172,14 +174,14 @@
                         </g>
                       </svg>
                     </button>
-                    <span class="gallery__like gallery__like--fifth">Нравится: 150</span>
+                    <span class="gallery__like">Нравится: 150</span>
                   </div>
                 </li>
                 <li class="gallery__item">
                   <a class="gallery__link" href="#">
                     <img class="gallery__img" src="img/photo-wing-mobile@1x.jpg" width="280" height="180"  alt="Фотография пользователя Надежда из самолета сфотографировала крыло самолета">
                   </a>
-                  <span class="gallery__author gallery__author--nadezhda">Надежда<time class="gallery__time" datetime="2020-05-24T18:18">(45 часов назад)</time></span>
+                  <span class="gallery__author">Надежда<time class="gallery__time" datetime="2020-05-24T18:18">(45 часов назад)</time></span>
                   <p class="gallery__comment">Всем GM и взаимные лайки!</p>
                   <div class="gallery__icon-wrapper">
                     <button class="gallery__heart" type="button">
@@ -189,7 +191,7 @@
                         </g>
                       </svg>
                     </button>
-                    <span class="gallery__like gallery__like--sixth">Нравится: 2560</span>
+                    <span class="gallery__like">Нравится: 2560</span>
                   </div>
                 </li>
               </ul>
