@@ -6,33 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>Пинк сайт фотоприложения для раскрашивания серых будней</title>
-  <style>
-    HTML {
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-      background-image: url("img/320.png");
-    }
-
-    @media (min-width: @tablet-width) {
-      HTML {
-        background-image: url("img/660.png");
-      }
-    }
-
-    @media (min-width: @desktop-width) {
-      HTML {
-
-        background-image: url("img/960.png");
-      }
-    }
-  </style>
-  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-  <script src="../node_modules/pixel-glass/script.js"></script>
 </head>
 
 <body class="page-body">
   <header class="page-header">
-    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <a class="main-nav__logo">
           <img class="page-header__img" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Пинк сайта фотоприложения для раскрашивания серых будней">
         </a>
@@ -57,7 +35,7 @@
           </li>
         </ul>
       </div>
-    </nav>
+      </nav>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Сайт фотоприложения для раскрашивания серых будней</h1>
@@ -223,28 +201,30 @@
         </div>
       </div>
     </section>
+
+    <section class="page-main__contacts contacts">
+        <p class="contacts__title">Остались вопросы?<br>Свяжитесь с нами!</p>
+        <div class="contacts__wrapper">
+          <div class="contacts__content-wrapper">
+            <p class="contacts__text">
+              Звоните:
+              <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
+            </p>
+            <p class="contacts__text">
+              Пишите:
+              <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </p>
+            <address class="contacts__text contacts__text--address">
+              Приезжайте в гости:
+              <span class="contacts__address">ул. Большая Конюшенная, 19/8</span>
+            </address>`
+          </div>
+          <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="200" alt="Подробная карта проезда до офиса разработчиков приложения Пинк">
+        </div>
+    </section>
   </main>
 
   <footer class="page-main__footer page-footer">
-    <div class="page-footer__wrapper container">
-      <div class="page-footer__contacts contacts">
-        <p class="contacts__title">Остались вопросы?<br>Свяжитесь с нами!</p>
-        <div class="contacts__wrapper">
-          <p class="contacts__text">
-            Звоните:
-            <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
-          </p>
-          <p class="contacts__text">
-            Пишите:
-            <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </p>
-          <address class="contacts__text">
-            Приезжайте в гости:
-            <span class="contacts__address">ул. Большая Конюшенная, 19/8</span>
-          </address>
-        </div>
-        <img class="page-footer__img" src="img/bg-map-mobile@1x.png" width="320" height="200" alt="Подробная карта проезда до офиса разработчиков приложения Пинк">
-      </div>
       <div class="wrapper-bottom">
         <div class="page-footer__logo">
           <a class="page-footer__logo-link" href="#">
@@ -277,7 +257,6 @@
           </a>
         </div>
       </div>
-    </div>
   </footer>
   <script src="js/script-menu.js"></script>
 </body>

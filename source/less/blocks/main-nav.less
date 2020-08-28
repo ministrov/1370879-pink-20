@@ -3,9 +3,12 @@
   width: auto;
   color: @color-white;
 
+  @media (min-width: @tablet-width) {
+    min-height: 110px;
+  }
+
   @media (min-width: @desktop-width) {
     display: flex;
-    width: 100%;
   }
 }
 
@@ -170,24 +173,27 @@
 .main-nav__logo {
   display: inline-block;
   margin-top: 24px;
-  padding-left: 20px;
+  margin-left: 20px;
   padding-bottom: 16px;
   vertical-align: middle;
 
   @media (min-width: @tablet-width) {
     margin-top: 43px;
-    margin-left: 91px;
+    margin-left: 93px;
     padding-left: 0;
     padding-bottom: 0;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-left: 363px;
   }
 }
 
 .main-nav--closed .main-nav__toggle {
   display: block;
+  margin-top: 2px;
+  margin-right: 12px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 21px;
+    margin-right: 10px;
+  }
 
   @media (min-width: @desktop-width) {
     display: none;

@@ -1,17 +1,70 @@
+.contacts {
+  text-align: center;
+}
+
 .contacts__wrapper {
   @media (min-width: @tablet-width) {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
     margin-top: 55px;
     margin-bottom: 30px;
+    background-color: plum;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
+    flex-direction: column;
+  }
+}
+
+.contacts__content-wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @desktop-width) {
+
     justify-content: space-between;
-    flex-wrap: nowrap;
-    align-items: baseline;
+    background-color: teal;
+  }
+}
+
+.contacts__content-wrapper .contacts__text:nth-child(1) {
+  @media (min-width: @tablet-width) {
+    margin-left: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+    order: 1;
+  }
+}
+
+.contacts__content-wrapper .contacts__text:nth-child(2) {
+  @media (min-width: @tablet-width) {
+    margin-right: auto;
+    margin-left: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+    margin-right: 0;
+    order: 3;
+  }
+}
+
+.contacts__text--address {
+  @media (min-width: @tablet-width) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    order: 2;
   }
 }
 
@@ -43,23 +96,9 @@
   font-style: normal;
   line-height: 24px;
   color: @color-black;
-
-  @media (min-width: @tablet-width) {
-    display: block;
-    width: 241px;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: block;
-    width: 33.33%;
-  }
 }
 
-.contacts__text:nth-of-type(2) {
-  @media (min-width: @desktop-width) {
-    order: 1;
-  }
-}
+
 
 .contacts__address {
   font-size: 24px;
@@ -69,17 +108,11 @@
 
   @media (min-width: @tablet-width) {
     display: block;
-    width: 211px;
-    margin: 15px;
-    margin-top: 0;
     padding: 0;
     line-height: 36px;
   }
 
-  @media (min-width: @desktop-width) {
-    margin: 48px;
-    margin-top: 0;
-  }
+
 }
 
 .contacts__phone {
@@ -107,6 +140,10 @@
   line-height: 24px;
   color: @hover-color;
 
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+
   &:hover,
   &:focus {
     text-decoration: underline;
@@ -116,5 +153,13 @@
   &:active {
     color: @color-black;
     opacity: 0.3;
+  }
+}
+
+.contacts__map {
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    height: auto;
+    max-height: 374px;
   }
 }
