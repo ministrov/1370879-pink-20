@@ -1,6 +1,7 @@
 .main-nav {
   position: relative;
-  width: auto;
+  margin-left: -20px;
+  margin-right: -20px;
   color: @color-white;
 
   @media (min-width: @tablet-width) {
@@ -9,7 +10,9 @@
 
   @media (min-width: @desktop-width) {
     display: flex;
-    padding-left: 269px;
+    justify-content: space-between;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -89,7 +92,6 @@
 
   @media (min-width: @desktop-width) {
     display: flex;
-    margin-left: 174px;
   }
 }
 
@@ -180,7 +182,6 @@
 
   @media (min-width: @tablet-width) {
     margin-top: 43px;
-    margin-left: 93px;
     padding-left: 0;
     padding-bottom: 0;
   }
