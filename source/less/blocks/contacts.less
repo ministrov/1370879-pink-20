@@ -24,10 +24,6 @@
     flex-wrap: wrap;
     padding-bottom: 0;
   }
-
-  @media (min-width: @desktop-width) {
-    justify-content: center;
-  }
 }
 
 .contacts__content-wrapper .contacts__text:nth-child(1) {
@@ -38,7 +34,8 @@
 
   @media (min-width: @desktop-width) {
     margin-top: 0;
-    padding-left: 43px;
+    margin-left: 327px;
+    margin-right: 111px;
     order: 1;
   }
 }
@@ -52,7 +49,6 @@
   @media (min-width: @desktop-width) {
     margin-top: 0;
     margin-left: 0;
-    margin-right: 0;
     order: 3;
   }
 }
@@ -99,15 +95,20 @@
 
 .contacts__text {
   margin: 0;
-  margin-top: 23px;
+  margin-top: 25px;
   font-size: 18px;
   font-weight: bold;
   font-style: normal;
   line-height: 24px;
   color: @color-black;
 
+  @media (min-width: @tablet-width) {
+    margin-top: 47px;
+  }
+
   @media (min-width: @desktop-width) {
     margin-top: 0;
+    margin-right: 92px;
   }
 }
 
@@ -126,6 +127,12 @@
     padding: 0;
     line-height: 36px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 23px;
+    margin-bottom: 14px;
+    line-height: 34px;
+  }
 }
 
 .contacts__phone {
@@ -137,7 +144,11 @@
   color: @hover-color;
 
   @media (min-width: @tablet-width) {
-    margin-top: 6px;
+    margin-top: 7px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 26px;
   }
 
   &:hover,
@@ -164,6 +175,10 @@
     margin-top: 6px;
   }
 
+  @media (min-width: @desktop-width) {
+    margin-top: 25px;
+  }
+
   &:hover,
   &:focus {
     text-decoration: underline;
@@ -181,5 +196,10 @@
     width: 100%;
     max-height: 376px;
     height: auto;
+    margin-top: 17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-height: 489px;
   }
 }
