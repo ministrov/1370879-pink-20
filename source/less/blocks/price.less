@@ -3,6 +3,7 @@
 
   @media (min-width: @tablet-width) {
     width: auto;
+    padding-bottom: 22px;
     overflow: visible;
   }
 
@@ -20,7 +21,7 @@
 
   @media (min-width: @tablet-width) {
     margin-left: 0;
-    margin-bottom: 11px;
+    margin-bottom: 21px;
     border: none;
   }
 
@@ -32,6 +33,12 @@
 
 .price__icon {
   width: 20%;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .price__table-header {
@@ -43,9 +50,9 @@
   @media (min-width: @tablet-width) {
     padding: 0;
     padding-top: 14px;
-    padding-left: 32px;
-    padding-right: 27px;
-    padding-bottom: 16px;
+    padding-left: 40px;
+    padding-right: 37px;
+    padding-bottom: 8px;
 
     &.price__hidden {
       color: @bg-gallery-storage;
@@ -92,6 +99,9 @@
 
   @media (min-width: @tablet-width) {
     min-width: 152px;
+    padding-top: 6px;
+    padding-left: 16px;
+    padding-bottom: 10px;
 
     &.price-closed {
       padding-top: 9px;
@@ -124,7 +134,8 @@
 
   @media (min-width: @tablet-width) {
     display: table-cell;
-    padding: 5px;
+    font-size: 14px;
+    line-height: 30px;
   }
 }
 
