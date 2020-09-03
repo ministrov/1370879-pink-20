@@ -8,27 +8,29 @@
     </head>
     <body class="page-body">
       <header class="page-header">
-        <div class="page-header__wrapper container">
-          <a class="page-header__logo" href="#">
-            <img class="page-header__img" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Пинк сайта фотоприложения для раскрашивания серых будней">
-          </a>
-          <nav class="main-nav">
-            <button class="main-nav__toggle" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
-            <div class="main-nav__wrapper">
+        <div class="page-header__wrapper">
+          <nav class="main-nav main-nav--closed main-nav--nojs">
+              <a class="main-nav__logo" href="index.html">
+                <img class="page-header__img" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Пинк сайта фотоприложения для раскрашивания серых будней">
+              </a>
+            <div class="main-nav__toggle-wrapper">
+              <button class="main-nav__toggle" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+              </button>
+            </div>
+            <div class="main-nav__list-wrapper">
               <ul class="main-nav__list">
                   <li class="main-nav__item">
                     <a class="main-nav__link" href="index.html">Главная</a>
                   </li>
                   <li class="main-nav__item">
-                    <a class="main-nav__link" href="photo.html">Фотографии</a>
+                    <a class="main-nav__link main-nav__link--active" href="photo.html">Фотографии</a>
                   </li>
                   <li class="main-nav__item">
-                    <a class="main-nav__link main-nav__link--active" href="#">Конкурс</a>
+                    <a class="main-nav__link">Конкурс</a>
                   </li>
                   <li class="main-nav__item">
-                    <a class="main-nav__link" href="https://htmlacademy.ru/study">html academy</a>
+                    <a class="main-nav__link" href="https://htmlacademy.ru/study"><abbr class="main-nav__abbreviation">html</abbr>academy</a>
                   </li>
               </ul>
             </div>
@@ -37,7 +39,7 @@
       </header>
       <main class="page-main">
         <h1 class="visually-hidden"> Старница формы обратной связи</h1>
-          <div class="page-main__intro intro">
+          <div class="page-main__intro intro intro-photo">
             <p class="intro__slogan intro-slogan-form">Конкурс на самое безбашенное путешествие с Пинк</p>
           </div>
           <section class="page-main__form-group">
@@ -130,39 +132,41 @@
               </div>
           </section>
       </main>
-      <footer class="form-footer">
-          <div class="form-footer__wrapper container">
-            <div class="form-footer-logo">
-              <a class="form-footer-logo__link" href="#">
-                <img class="form-footer-logo__img" src="img/logo-pink-blue-mobile.svg" width="145" height="40" alt="Логотип htmlacademy">
+      <footer class="page-main__footer page-footer container">
+          <div class="wrapper-bottom">
+            <div class="page-footer__logo">
+              <a class="page-footer__logo-link" href="#">
+                <img class="page-footer__logo-img" src="img/logo-pink-blue-mobile.svg" width="145" height="40" alt="Логотип компании Пинк">
               </a>
             </div>
             <div class="social">
-                <ul class="social__list">
-                  <li class="social__item">
-                    <a class="social__link social__link--twitter" href="#">
-                      <span class="visually-hidden">Пинк в Твиттере</span>
-                    </a>
-                  </li>
-                  <li class="social__item">
-                    <a class="social__link social__link--facebook" href="#">
-                      <span class="visually-hidden">Пинк в Файсбуке</span>
-                    </a>
-                  </li>
-                  <li class="social__item">
-                    <a class="social__link social__link--youtube" href="#">
-                      <span class="visually-hidden">Пинк в Ютюбе</span>
-                    </a>
-                  </li>
-                </ul>
+              <ul class="social__list">
+                <li class="social__item">
+                  <a class="social__link social__link--twitter" href="#">
+                    <span class="visually-hidden">Пинк в Твиттере</span>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--facebook" href="#">
+                    <span class="visually-hidden">Пинк в Файсбуке</span>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--youtube" href="#">
+                    <span class="visually-hidden">Пинк в Ютюбе</span>
+                  </a>
+                </li>
+              </ul>
             </div>
-            <div class="copyright">
+            <div class="page-footer__copyright copyright">
               <p class="copyright__text">Разработано</p>
               <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
                 <img class="copyright__img" src="img/htmlacademy-pink.svg" width="27" height="34" alt="Логотип htmlacademy">
               </a>
             </div>
           </div>
+        </div>
       </footer>
+      <script src="js/script-menu.js"></script>
     </body>
 </html>

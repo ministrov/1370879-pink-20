@@ -3,38 +3,56 @@
 
   @media (min-width: @tablet-width) {
     width: auto;
+    padding-bottom: 22px;
     overflow: visible;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 93px;
   }
 }
 
 .price__table {
   margin-left: -277px;
+  margin-bottom: 28px;
   background-color: @color-white;
   border: 2px solid @input-grey;
   border-collapse: collapse;
 
   @media (min-width: @tablet-width) {
     margin-left: 0;
+    margin-bottom: 21px;
     border: none;
   }
 
   @media (min-width: @desktop-width) {
     width: 100%;
+    margin-bottom: 0;
+  }
+}
+
+.price__icon {
+  width: 20%;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 .price__table-header {
-  padding-top: 20px;
-  padding-bottom: 45px;
+  padding-top: 11px;
+  padding-bottom: 28px;
   color: @color-white;
   background-color: @color-black;
 
   @media (min-width: @tablet-width) {
     padding: 0;
     padding-top: 14px;
-    padding-left: 32px;
-    padding-right: 27px;
-    padding-bottom: 16px;
+    padding-left: 40px;
+    padding-right: 37px;
+    padding-bottom: 8px;
 
     &.price__hidden {
       color: @bg-gallery-storage;
@@ -74,11 +92,16 @@
 
 .price__definition {
   min-width: 277px;
-  padding: 11px;
+  padding-top: 11px;
+  padding-left: 20px;
+  padding-bottom: 19px;
   border: 2px solid @input-grey;
 
   @media (min-width: @tablet-width) {
     min-width: 152px;
+    padding-top: 6px;
+    padding-left: 16px;
+    padding-bottom: 10px;
 
     &.price-closed {
       padding-top: 9px;
@@ -90,10 +113,13 @@
 }
 
 .price__description {
+  display: inline-block;
+  width: 80%;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
+  vertical-align: middle;
   color: @color-black;
 
   @media (min-width: @tablet-width) {
@@ -103,17 +129,13 @@
   }
 }
 
-.price__icon {
-  display: inline-block;
-  margin-left: 100px;
-}
-
 .price__hidden {
   display: none;
 
   @media (min-width: @tablet-width) {
     display: table-cell;
-    padding: 5px;
+    font-size: 14px;
+    line-height: 30px;
   }
 }
 

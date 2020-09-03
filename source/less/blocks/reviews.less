@@ -9,12 +9,27 @@
 
 .reviews__author {
   display: block;
+  margin-top: 43px;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 30px;
   text-align: center;
   color: @black;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -22px;
+    letter-spacing: 1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -26px;
+    margin-bottom: 4px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    letter-spacing: 0;
+  }
 }
 
 .reviews__text {
@@ -28,6 +43,7 @@
     font-weight: 400;
     line-height: 30px;
     color: @color-black;
+    order: -1;
   }
 
   @media (min-width: @desktop-width) {
@@ -39,20 +55,25 @@
 
 .reviews__comment {
   width: 280px;
+  padding-top: 10px;
   height: 160px;
   margin: 0 auto;
   font-size: 14px;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 31px;
   text-align: center;
   color: @color-black;
 
   @media (min-width: @tablet-width) {
     width: 620px;
+    padding: 0;
+    padding-top: 12px;
+    font-size: 18px;
+    line-height: 30px;
   }
 
   @media (min-width: @desktop-width) {
     width: 688px;
-    margin-left: 115px;
+    margin-left: 126px;
   }
 }

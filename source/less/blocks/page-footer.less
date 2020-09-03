@@ -1,10 +1,22 @@
 .page-footer {
+  padding-bottom: 40px;
   background-color: @color-white;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 0;
+  }
 }
 
 .page-footer__wrapper {
   text-align: center;
-  outline: @outline;
+}
+
+.page-footer__logo {
+  margin-left: 68px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+  }
 }
 
 .page-footer__img {
