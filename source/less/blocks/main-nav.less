@@ -52,6 +52,49 @@
   right: 8px;
 }
 
+
+.main-nav--opened .main-nav__toggle {
+  @media (min-width: @tablet-width) {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: 50%;
+      width: 3px;
+      height: 23px;
+      background-color: @color-white;
+    //  background-image: url("../img/icon-menu-cross.svg");
+      //background-repeat: no-repeat;
+      transform: rotate(45deg);
+      &:hover {
+        background-color: red;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: 50%;
+      width: 3px;
+      height: 23px;
+      background-color: @color-white;
+    //  background-image: url("../img/icon-menu-cross.svg");
+      //background-repeat: no-repeat;
+      transform: rotate(-45deg);
+
+      &:hover {
+        background-color: red;
+      }
+    }
+
+  }
+}
+
+
+
 .main-nav__toggle {
   position: relative;
   display: block;
@@ -61,25 +104,15 @@
   background-color: transparent;
   cursor: pointer;
 
-  &::before {
-    position: absolute;
-    content: "";
-    top: 50%;
-    left: 50%;
-    width: 23px;
-    height: 23px;
-    background-image: url("../img/icon-menu-cross.svg");
-    background-repeat: no-repeat;
-    transform: translate(-50%, -50%);
-  }
-
   &:active {
     background-image: url("../img/close-menu-btn-hover.svg");
     background-repeat: no-repeat;
   }
 
   @media (min-width: @tablet-width) {
+    position: relative;
     margin-top: 20px;
+    margin-right: 11px;
   }
 
   @media (min-width: @desktop-width) {
@@ -210,8 +243,8 @@
   content: "";
   width: 50px;
   height: 4px;
-  top: 10px;
-  left: 25px;
+  top: 0;
+  left: 0;
   background-color: @color-white;
   box-shadow: 0 10px 0 0 @color-white, 0 20px 0 0 @color-white;
   border-radius: 2px;

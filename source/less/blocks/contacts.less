@@ -53,6 +53,54 @@
   }
 }
 
+.contacts__map-wrapper {
+  position: relative;
+
+  @media (min-width: @desktop-width) {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.contacts__map-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 10px;
+    width: 660px;
+    height: 374px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 20px;
+    width: 1200px;
+    height: 502px;
+  }
+}
+
+.contacts__map-iframe  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  z-index: 11;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 10px;
+    width: 660px;
+    height: 374px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 20px;
+    width: 1200px;
+    height: 502px;
+  }
+}
+
 .contacts__text--address {
   display: block;
   margin-top: 27px;

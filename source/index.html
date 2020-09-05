@@ -16,8 +16,7 @@
           <img class="page-header__img" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Пинк сайта фотоприложения для раскрашивания серых будней">
         </a>
       <div class="main-nav__toggle-wrapper">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
+        <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
         </button>
       </div>
       <div class="main-nav__list-wrapper">
@@ -166,26 +165,26 @@
           <tr class="price__row">
             <th class="price__table-header price__hidden"></th>
             <th class="price__table-header"><b class="price__emphasazing">База</b> <span class="price__tag">1,99 USD</span></th>
-            <th class="price__table-header"><b class="price__emphasazing">Стандарт</b> <span class="price__tag">3,99 USD</span></th>
+            <th class="price__table-header price__header--standart"><b class="price__emphasazing">Стандарт</b> <span class="price__tag">3,99 USD</span></th>
             <th class="price__table-header"><b class="price__emphasazing">Анлим</b> <span class="price__tag">9,99 USD</span></th>
           </tr>
           <tr class="price__row">
             <td class="price__definition price__hidden price__title">Розовый фильтр</td>
-            <td class="price__definition"><span class="price__description">Розовый фильтр</span><span class="price__icon">Есть</span></td>
-            <td class="price__definition"><span class="price__description">Розовый фильтр</span><span class="price__icon">Есть</span></td>
-            <td class="price__definition"><span class="price__description">Розовый фильтр</span><span class="price__icon">Есть</span></td>
+            <td class="price__definition price__definition--yes-icon"><span class="price__description">Розовый фильтр</span><span class="price__icon visually-hidden">Есть</span></td>
+            <td class="price__definition price__definition--yes-icon"><span class="price__description">Розовый фильтр</span><span class="price__icon visually-hidden">Есть</span></td>
+            <td class="price__definition price__definition--yes-icon"><span class="price__description">Розовый фильтр</span><span class="price__icon visually-hidden">Есть</span></td>
           </tr>
           <tr class="price__row">
             <td class="price__definition price__hidden price__title">Смайлики</td>
-            <td class="price__definition"><span class="price__description">Смайлики</span><span class="price__icon">Нет</span></td>
-            <td class="price__definition"><span class="price__description">Смайлики</span><span class="price__icon">Нет</span></td>
-            <td class="price__definition"><span class="price__description">Смайлики</span><span class="price__icon">Нет</span></td>
+            <td class="price__definition price__definition--no-icon"><span class="price__description">Смайлики</span><span class="price__icon visually-hidden">Есть</span></td>
+            <td class="price__definition price__definition--yes-icon"><span class="price__description">Смайлики</span><span class="price__icon visually-hidden">Есть</span></td>
+            <td class="price__definition price__definition--yes-icon"><span class="price__description">Смайлики</span><span class="price__icon visually-hidden">Есть</span></td>
           </tr>
           <tr class="price__row">
             <td class="price__definition price__hidden price__title">Комментарии</td>
-            <td class="price__definition"><span class="price__description">Комментарии</span><span class="price__icon">Есть</span></td>
-            <td class="price__definition"><span class="price__description">Комментарии</span><span class="price__icon">Есть</span></td>
-            <td class="price__definition"><span class="price__description">Комментарии</span><span class="price__icon">Есть</span></td>
+            <td class="price__definition price__definition--no-icon"><span class="price__description">Комментарии</span><span class="price__icon visually-hidden">нет</span></td>
+            <td class="price__definition price__definition--no-icon"><span class="price__description">Комментарии</span><span class="price__icon visually-hidden">нет</span></td>
+            <td class="price__definition price__definition--yes-icon"><span class="price__description">Комментарии</span><span class="price__icon visually-hidden">нет</span></td>
           </tr>
         </table>
         <div class="toggle toggle-price">
@@ -219,7 +218,10 @@
               <span class="contacts__address">ул. Большая Конюшенная, 19/8</span>
             </address>`
           </div>
-          <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="200" alt="Подробная карта проезда до офиса разработчиков приложения Пинк">
+          <div class="contacts__map-wrapper">
+            <iframe  class="contacts__map-iframe" src="https://yandex.ru/map-widget/v1/-/CCQxaOvvLB" width="320" height="200" allowfullscreen="true" style="position:relative;"></iframe>
+            <img class="contacts__map-image" src="img/bg-map-mobile@1x.png" width="320" height="200" alt="Подробная карта проезда до офиса разработчиков приложения Пинк">
+          </div>
         </div>
     </section>
   </main>
