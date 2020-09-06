@@ -52,13 +52,17 @@
       left: 50%;
       background-image: url("../img/iphone-hand-desktop@1x.png");
       background-repeat: no-repeat;
-      transform: translate(-51%, -34%);
+      transform: translate(-51%, -219px);
     }
   }
 }
 
-.intro + .container {
+.intro__main {
   padding-bottom: 12px;
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 34px;
+  }
 }
 
 .intro__wrapper {

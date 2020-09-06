@@ -1,5 +1,28 @@
 .reviews {
+  position: relative;
   background-color: @color-white;
+
+  @media (min-width: desktop-width) {
+    &::before {
+      position: absolute;
+      content: "";
+      width: 22px;
+      height: 41px;
+      top: 0;
+      left: 0;
+      background-color: tomato;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 22px;
+      height: 41px;
+      top: 0;
+      right: 0;
+      background-color: tomato;
+    }
+  }
 }
 
 .reviews__list {
