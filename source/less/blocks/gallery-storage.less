@@ -6,16 +6,29 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding-right: 46px;
-
-  @media (min-width: @tablet-width) {
-    padding-right: 0;
-  }
 }
 
 .gallery-storage__form-wrapper {
-  padding-bottom: 39px;
+  position: relative;
+  margin-bottom: 5px;
+  padding-bottom: 45px;
   background-color: @bg-gallery-storage;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    top: 555px;
+    left: 0;
+    background-color: @color-black;
+    opacity: 0.1;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     padding-bottom: 53px;
@@ -65,8 +78,15 @@
 .gallery-storage__list {
   display: flex;
   justify-content: space-between;
-  margin-top: 45px;
-  margin-bottom: 127px;
+  align-items: start;
+  position: relative;
+  width: 240px;
+  min-height: 130px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
   list-style: none;
 
   @media (min-width: @tablet-width) {
@@ -83,6 +103,73 @@
   }
 }
 
+.gallery-storage__item {
+  g {
+    fill: @color-black;
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 20px;
+  }
+}
+
+.gallery-storage__toggle:hover,
+.gallery-storage__toggle:focus {
+  g {
+    fill: @color-black;
+    opacity: 0.5;
+  }
+}
+
+.gallery-storage__toggle:active {
+  g {
+    fill: @hover-color;
+    opacity: 1;
+  }
+}
+
+.gallery-storage__toggle--current {
+  g {
+    fill: @hover-color;
+    opacity: 1;
+  }
+}
+
+.gallery-storage__item--crop .gallery-storage__toggle {
+  margin-left: 10px;
+}
+
+.gallery-storage__item--contrast .gallery-storage__toggle {
+  margin-right: 20px;
+}
+
+.gallery-storage__scale-wrapper {
+  position: absolute;
+  bottom: 22px;
+  left: 0;
+  padding: 20px 0;
+  background-color: @color-white;
+}
+
+.gallery-storage__scale {
+  position: relative;
+  width: 240px;
+  height: 2px;
+  background-color: @color-black;
+}
+
+.gallery-storage__bar {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: -5px;
+  left: 193px;
+  background-color: @color-white;
+  border: 2px solid @hover-color;
+  border-radius: 50%;
+}
+
 .gallery-storage__button-wrapper {
   @media (min-width: @tablet-width) {
     margin-top: 88px;
@@ -95,10 +182,14 @@
   }
 }
 
-.gallery-storage__item {
-  @media (min-width: @tablet-width) {
-    padding: 20px;
-  }
+.gallery-storage__toggle {
+  width: 48px;
+  height: 48px;
+  align-items: start;
+  margin-bottom: 11px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .gallery-storage__img {

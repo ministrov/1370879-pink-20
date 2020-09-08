@@ -1,5 +1,39 @@
 .price {
+  position: relative;
   background-color: @bg-gallery-storage;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 172px;
+    top: -172px;
+    left: 0;
+    background-color: @bg-gallery-storage;
+    background-image: url("../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-left: 2px;
+    margin-bottom: 45px;
+    border: none;
+
+    &::before {
+      width: 100%;
+      top: -143px;
+      left: -1px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+
+    &::before {
+      top: -137px;
+      left: 0;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     width: auto;
@@ -20,38 +54,10 @@
   border: 2px solid @input-grey;
   border-collapse: collapse;
 
-  &::before {
-    position: absolute;
-    content: "";
-    width: 320px;
-    height: 172px;
-    top: -174px;
-    left: 256px;
-    background-color: @bg-gallery-storage;
-    background-image: url("../img/bg-triangle-white.svg");
-    background-repeat: no-repeat;
-  }
-
   @media (min-width: @tablet-width) {
-    margin-left: 2px;
-    margin-bottom: 45px;
-    border: none;
-
-    &::before {
-      width: 100vw;
-      top: -143px;
-      left: -22px;
-    }
-  }
-
-  @media (min-width: @desktop-width) {
     width: 100%;
-    margin-bottom: 0;
-
-    &::before {
-      top: -137px;
-      left: -308px;
-    }
+    margin-left: 0;
+    border: none;
   }
 }
 
@@ -84,8 +90,7 @@
     &.price__hidden {
       color: @bg-gallery-storage;
       background-color: @bg-gallery-storage;
-      border-left: none;
-      outline: none;
+      border: none;
     }
   }
 
