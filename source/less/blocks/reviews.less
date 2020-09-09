@@ -2,25 +2,18 @@
   position: relative;
   background-color: @color-white;
 
-  @media (min-width: desktop-width) {
-    &::before {
+  &::before {
+    @media (min-width: @desktop-width) {
       position: absolute;
       content: "";
-      width: 22px;
-      height: 41px;
-      top: 50%;
+      width: 80px;
+      height: 63px;
+      top: -108px;
       left: 50%;
-      background-color: tomato;
-    }
-
-    &::after {
-      position: absolute;
-      content: "";
-      width: 22px;
-      height: 41px;
-      top: 50%;
-      right: 0;
-      background-color: tomato;
+      background-image: url("../img/icon-quotes.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      transform: translate(-50%);
     }
   }
 }
