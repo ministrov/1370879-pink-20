@@ -35,7 +35,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 57px;
+    padding-bottom: 11px;
     background-color: @color-white;
   }
 }
@@ -50,6 +50,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    padding-bottom: 56px;
     background-color: @input-grey;
   }
 }
@@ -105,10 +106,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 0;
-    padding-right: 0;
-
     width: 410px;
+    margin-top: 43px;
+    padding-right: 72px;
   }
 }
 
@@ -165,11 +165,10 @@
     margin-left: 0;
     padding: 0;
   }
-}
 
-.gallery-storage__item--crop .gallery-storage__bar {
-  @media (min-width: @tablet-width) {
-    left: 146px;
+  @media (min-width: @desktop-width) {
+    margin-top: -5px;
+    margin-left: -62px;
   }
 }
 
@@ -177,11 +176,30 @@
   @media (min-width: @tablet-width) {
     top: 20px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -8px;
+    margin-left: -66px;
+  }
+}
+
+.gallery-storage__item--crop .gallery-storage__bar {
+  @media (min-width: @tablet-width) {
+    left: 146px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 69px;
+  }
 }
 
 .gallery-storage__item--fill .gallery-storage__bar {
   @media (min-width: @tablet-width) {
     left: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 163px;
   }
 }
 
@@ -191,11 +209,20 @@
   @media (min-width: @tablet-width) {
     top: 20px;
   }
+
+  @media (min-width: @desktop-width) {
+    top: 23px;
+    left: -58px;
+  }
 }
 
 .gallery-storage__item--contrast .gallery-storage__bar {
   @media (min-width: @tablet-width) {
     left: 97px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 160px;
   }
 }
 
@@ -204,7 +231,7 @@
   bottom: 22px;
   left: 0;
   padding: 20px 0;
-  background-color: @color-white;
+  background-color: @bg-gallery-storage;
 
   @media (min-width: @tablet-width) {
     position: static;
@@ -212,10 +239,6 @@
     width: 202px;
     padding: 34px 0;
     margin-right: 18px;
-  }
-
-  @media (min-width: @tablet-width) {
-    width: 288px;
   }
 }
 
@@ -251,7 +274,8 @@
   @media (min-width: @desktop-width) {
     display: flex;
     max-width: 410px;
-    margin-top: 128px;
+    margin-top: 122px;
+    margin-right: 60px;
   }
 }
 
@@ -273,7 +297,7 @@
     left: 0;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     width: 44px;
     height: 44px;
     transform: scale(1);
