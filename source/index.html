@@ -16,8 +16,19 @@
           <img class="page-header__img" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Пинк сайта фотоприложения для раскрашивания серых будней">
         </a>
       <div class="main-nav__toggle-wrapper">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
+        <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
+        <svg class="mai-nav__svg main-nav__svg--burger" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
+          <g id="miu">
+            <g id="editor_list_view_hambuger_menu_glyph">
+              <g>
+                <path id="path-1" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+        <svg class="main-nav__svg main-nav__svg--cross" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
+          <path d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
+        </svg>
         </button>
       </div>
       <div class="main-nav__list-wrapper">
@@ -26,7 +37,7 @@
             <a class="main-nav__link">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--active" href="photo.html">Фотографии</a>
+            <a class="main-nav__link" href="photo.html">Фотографии</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="form.html">Конкурс</a>
@@ -41,11 +52,11 @@
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Сайт фотоприложения для раскрашивания серых будней</h1>
-    <section class="intro">
+    <section class="intro__main intro">
       <div class="container">
         <div class="intro__wrapper">
           <h2 class="visually-hidden">Слайдер с продукцией компании Пинк</h2>
-          <p class="intro__slogan">Взгляните на жизнь иначе!</p>
+          <p class="intro__slogan intro__slogan-main">Взгляните на жизнь иначе!</p>
           <a class="intro__button button button--white" href="#">Скачать приложение</a>
           <ul class="intro__list">
             <li class="intro__item">
@@ -145,6 +156,22 @@
             </p>
           </li>
         </ul>
+        <ul class="slider__button-list">
+          <li class="slider__button-item">
+            <button class="slider__button slider__button--left" type="button" aria-label="Левая кнопка слайдера">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
+                <path d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z"/>
+              </svg>
+            </button>
+          </li>
+          <li class="slider__button-item">
+            <button class="slider__button slider__button--right" type="button" aria-label="Правая кнопка слайдера">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
+                <path d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
+              </svg>
+            </button>
+          </li>
+        </ul>
         <div class="toggle toggle-reviews">
           <button class="toggle__btn toggle__btn--current" type="button">
             <span class="visually-hidden">Первый слайд</span>
@@ -166,26 +193,26 @@
           <tr class="price__row">
             <th class="price__table-header price__hidden"></th>
             <th class="price__table-header"><b class="price__emphasazing">База</b> <span class="price__tag">1,99 USD</span></th>
-            <th class="price__table-header"><b class="price__emphasazing">Стандарт</b> <span class="price__tag">3,99 USD</span></th>
+            <th class="price__table-header price__header--standart"><b class="price__emphasazing">Стандарт</b> <span class="price__tag">3,99 USD</span></th>
             <th class="price__table-header"><b class="price__emphasazing">Анлим</b> <span class="price__tag">9,99 USD</span></th>
           </tr>
           <tr class="price__row">
             <td class="price__definition price__hidden price__title">Розовый фильтр</td>
-            <td class="price__definition"><span class="price__description">Розовый фильтр</span><span class="price__icon">Есть</span></td>
-            <td class="price__definition"><span class="price__description">Розовый фильтр</span><span class="price__icon">Есть</span></td>
-            <td class="price__definition"><span class="price__description">Розовый фильтр</span><span class="price__icon">Есть</span></td>
+            <td class="price__definition price__definition--yes-icon"><span class="price__description">Розовый фильтр</span><span class="price__icon visually-hidden">Есть</span></td>
+            <td class="price__definition price__definition--yes-icon"><span class="price__description">Розовый фильтр</span><span class="price__icon visually-hidden">Есть</span></td>
+            <td class="price__definition price__definition--yes-icon"><span class="price__description">Розовый фильтр</span><span class="price__icon visually-hidden">Есть</span></td>
           </tr>
           <tr class="price__row">
             <td class="price__definition price__hidden price__title">Смайлики</td>
-            <td class="price__definition"><span class="price__description">Смайлики</span><span class="price__icon">Нет</span></td>
-            <td class="price__definition"><span class="price__description">Смайлики</span><span class="price__icon">Нет</span></td>
-            <td class="price__definition"><span class="price__description">Смайлики</span><span class="price__icon">Нет</span></td>
+            <td class="price__definition price__definition--no-icon"><span class="price__description">Смайлики</span><span class="price__icon visually-hidden">Есть</span></td>
+            <td class="price__definition price__definition--yes-icon"><span class="price__description">Смайлики</span><span class="price__icon visually-hidden">Есть</span></td>
+            <td class="price__definition price__definition--yes-icon"><span class="price__description">Смайлики</span><span class="price__icon visually-hidden">Есть</span></td>
           </tr>
           <tr class="price__row">
             <td class="price__definition price__hidden price__title">Комментарии</td>
-            <td class="price__definition"><span class="price__description">Комментарии</span><span class="price__icon">Есть</span></td>
-            <td class="price__definition"><span class="price__description">Комментарии</span><span class="price__icon">Есть</span></td>
-            <td class="price__definition"><span class="price__description">Комментарии</span><span class="price__icon">Есть</span></td>
+            <td class="price__definition price__definition--no-icon"><span class="price__description">Комментарии</span><span class="price__icon visually-hidden">нет</span></td>
+            <td class="price__definition price__definition--no-icon"><span class="price__description">Комментарии</span><span class="price__icon visually-hidden">нет</span></td>
+            <td class="price__definition price__definition--yes-icon"><span class="price__description">Комментарии</span><span class="price__icon visually-hidden">нет</span></td>
           </tr>
         </table>
         <div class="toggle toggle-price">
@@ -205,7 +232,7 @@
     <section class="page-main__contacts contacts">
         <p class="contacts__title">Остались вопросы?<br>Свяжитесь с нами!</p>
         <div class="contacts__wrapper">
-          <div class="contacts__content-wrapper">
+          <div class="contacts__content-wrapper  container">
             <p class="contacts__text">
               Звоните:
               <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
@@ -219,7 +246,10 @@
               <span class="contacts__address">ул. Большая Конюшенная, 19/8</span>
             </address>`
           </div>
-          <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="200" alt="Подробная карта проезда до офиса разработчиков приложения Пинк">
+          <div class="contacts__map-wrapper">
+            <iframe  class="contacts__map-iframe" src="https://yandex.ru/map-widget/v1/-/CCQxaOvvLB" width="320" height="200" allowfullscreen="true" style="position:relative;"></iframe>
+            <img class="contacts__map-image" src="img/bg-map-mobile@1x.png" width="320" height="200" alt="Подробная карта проезда до офиса разработчиков приложения Пинк">
+          </div>
         </div>
     </section>
   </main>

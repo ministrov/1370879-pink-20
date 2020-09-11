@@ -1,4 +1,5 @@
 .slider__item {
+  position: relative;
   margin-top: 20px;
 
   @media (min-width: @tablet-width) {
@@ -13,4 +14,75 @@
 
 .slider__item--third {
   display: none;
+}
+
+.slider__button-list {
+  display: none;
+  position: relative;
+  list-style: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.slider__button {
+  @media (min-width: @desktop-width) {
+    cursor: pointer;
+
+    path {
+      fill: @color-black;
+      opacity: 0.3;
+    }
+  }
+}
+
+.slider__button--left {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: -177px;
+    left: -6px;
+    background-color: @color-white;
+    border: none;
+  }
+}
+
+.slider__button--left:hover,
+.slider__button--left:focus {
+  path {
+    fill: @color-black;
+    opacity: 0.6;
+  }
+}
+
+.slider__button--left:active {
+  path {
+    fill: @color-black;
+    opacity: 0.1;
+  }
+}
+
+.slider__button--right {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: -177px;
+    left: 913px;
+    background-color: @color-white;
+    border: none;
+  }
+}
+
+.slider__button:hover,
+.slider__button:focus {
+  path {
+    fill: @color-black;
+    opacity: 0.6;
+  }
+}
+
+.slider__button:active {
+  path {
+    fill: @color-black;
+    opacity: 0.1;
+  }
 }

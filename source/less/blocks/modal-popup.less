@@ -1,0 +1,142 @@
+.modal-popup {
+  display: none;
+  margin-bottom: 40px;
+  background-color: @color-white;
+
+  @media (min-width: @tablet-width) {
+    width: 460px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 780px;
+  }
+}
+
+.modal-popup--success {
+  position: absolute;
+  top: 1894px;
+  left: 0;
+  z-index: 100;
+  box-shadow: 0 7px 15px @box-shadow;
+
+  @media (min-width: @tablet-width) {
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 1299px;
+  }
+}
+
+.modal-popup--failure {
+  position: absolute;
+  top: 1420px;
+  left: 0;
+  z-index: 100;
+  box-shadow: 0 7px 15px @box-shadow;
+
+  @media (min-width: @tablet-width) {
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 872px;
+  }
+}
+
+.modal-popup__title {
+  margin-top: 44px;
+  padding-bottom: 6px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  color: @black;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 101px;
+    padding-right: 103px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.modal-popup__text {
+  padding-bottom: 29px;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: @color-black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.modal-popup__text--success {
+  padding-bottom: 19px;
+  padding-left: 26px;
+  padding-right: 29px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 67px;
+    padding-right: 62px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 191px;
+    padding-right: 209px;
+
+    br {
+      display: none;
+    }
+  }
+}
+
+.modal-popup__wrapper--failure {
+  @media (min-width: @desktop-width) {
+    padding-top: 52px;
+    background-color: @bg-gallery-storage;
+  }
+}
+
+.modal-popup__wrapper--success {
+  padding-top: 52px;
+  padding-bottom: 52px;
+  background-color: @bg-gallery-storage;
+}
+
+.modal-popup__button {
+  display: inline-block;
+  width: 279px;
+  height: 59px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 0;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: @color-white;
+  background-color: @page-main-button-green;
+  border-radius: 1px;
+  box-sizing: border-box;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 90px;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 241px;
+  }
+}
+
+.modal-popup__button--failure {
+  margin-bottom: 51px;
+}

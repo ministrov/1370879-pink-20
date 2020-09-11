@@ -6,23 +6,37 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding-right: 46px;
-
-  @media (min-width: @tablet-width) {
-    padding-right: 0;
-  }
 }
 
 .gallery-storage__form-wrapper {
-  padding-bottom: 39px;
+  position: relative;
+  margin-bottom: 5px;
+  padding-bottom: 45px;
   background-color: @bg-gallery-storage;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    top: 555px;
+    left: 0;
+    background-color: @color-black;
+    opacity: 0.1;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     padding-bottom: 53px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 57px;
+    padding-bottom: 11px;
+    background-color: @color-white;
   }
 }
 
@@ -32,7 +46,13 @@
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
-    padding-top: 57px;
+    padding-top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    padding-bottom: 56px;
+    background-color: @input-grey;
   }
 }
 
@@ -51,13 +71,13 @@
 
   @media (min-width: @tablet-width) {
     margin-top: 47px;
-    margin-bottom: 71px;
+    margin-bottom: 67px;
     font-size: 18px;
     line-height: 30px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 2px;
+    margin-top: 8px;
     margin-bottom: 67px;
   }
 }
@@ -65,44 +85,242 @@
 .gallery-storage__list {
   display: flex;
   justify-content: space-between;
-  margin-top: 45px;
-  margin-bottom: 127px;
+  align-items: start;
+  position: relative;
+  width: 240px;
+  min-height: 130px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
   list-style: none;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
-    margin-top: -14px;
-    margin-bottom: 0;
-    margin-left: 12px;
+    margin: 0;
+    margin-left: auto;
+    margin-top: 44px;
+    width: 276px;
+    box-sizing: border-box;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 0;
-    padding-right: 422px;
-  }
-}
-
-.gallery-storage__button-wrapper {
-  @media (min-width: @tablet-width) {
-    margin-top: 88px;
-    margin-left: 66px;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: flex;
-    margin-top: 128px;
+    width: 410px;
+    margin-top: 43px;
+    padding-right: 72px;
   }
 }
 
 .gallery-storage__item {
+  g {
+    fill: @color-black;
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablet-width) {
-    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+
+    width: 100%;
+    border-bottom: 1px solid @toggle-grey-01;
+
+    g {
+      fill: @hover-color;
+      opacity: 1;
+    }
+  }
+}
+
+.gallery-storage__toggle:hover,
+.gallery-storage__toggle:focus {
+  g {
+    fill: @color-black;
+    opacity: 0.5;
+  }
+}
+
+.gallery-storage__toggle:active {
+  g {
+    fill: @hover-color;
+    opacity: 1;
+  }
+}
+
+.gallery-storage__toggle--current {
+  g {
+    fill: @hover-color;
+    opacity: 1;
+  }
+}
+
+.gallery-storage__item--crop .gallery-storage__toggle {
+  margin-left: 10px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -5px;
+    margin-left: -52px;
+  }
+}
+
+.gallery-storage__item--fill .gallery-storage__toggle {
+  @media (min-width: @tablet-width) {
+    top: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -8px;
+    margin-left: -56px;
+  }
+}
+
+.gallery-storage__item--crop .gallery-storage__bar {
+  @media (min-width: @tablet-width) {
+    left: 146px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 69px;
+  }
+}
+
+.gallery-storage__item--fill .gallery-storage__bar {
+  @media (min-width: @tablet-width) {
+    left: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 248px;
+  }
+}
+
+.gallery-storage__item--contrast .gallery-storage__toggle {
+  margin-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    top: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 15px;
+    left: -50px;
+  }
+}
+
+.gallery-storage__item--contrast .gallery-storage__bar {
+  @media (min-width: @tablet-width) {
+    left: 97px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 160px;
+  }
+}
+
+.gallery-storage__scale-wrapper {
+  position: absolute;
+  bottom: 22px;
+  left: 0;
+  padding: 20px 0;
+  background-color: @bg-gallery-storage;
+
+  @media (min-width: @tablet-width) {
+    position: static;
+    background-color: transparent;
+    width: 202px;
+    padding: 34px 0;
+    margin-right: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 288px;
+    margin-right: 8px;
+  }
+}
+
+.gallery-storage__scale {
+  position: relative;
+  width: 240px;
+  height: 2px;
+  background-color: @color-black;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+}
+
+.gallery-storage__bar {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: -5px;
+  left: 193px;
+  background-color: @color-white;
+  border: 2px solid @hover-color;
+  border-radius: 50%;
+}
+
+.gallery-storage__button-wrapper {
+  @media (min-width: @tablet-width) {
+    max-width: 260px;
+    margin-top: 66px;
+    margin-left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    max-width: 410px;
+    margin-top: 122px;
+    margin-right: 49px;
+  }
+}
+
+.gallery-storage__toggle {
+  width: 48px;
+  height: 48px;
+  align-items: start;
+  margin-bottom: 11px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    width: 24px;
+    height: 24px;
+    transform: scale(0.5);
+    position: absolute;
+    top: 16px;
+    left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 44px;
+    height: 44px;
+    transform: scale(1);
+    position: absolute;
+    top: 16px;
+    left: 0;
   }
 }
 
 .gallery-storage__img {
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    height: 400px;
+    margin-top: 57px;
+  }
+
   @media (min-width: @desktop-width) {
-    margin-left: 79px;
+    margin-left: 70px;
   }
 }

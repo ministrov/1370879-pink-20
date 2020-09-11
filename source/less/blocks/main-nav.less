@@ -53,32 +53,22 @@
 }
 
 .main-nav__toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  display: block;
   width: 50px;
   height: 40px;
+  margin-top: 4px;
+  margin-right: 12px;
+  padding: 0;
   border: none;
   background-color: transparent;
   cursor: pointer;
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: 50%;
-    left: 50%;
-    width: 23px;
-    height: 23px;
-    background-image: url("../img/icon-menu-cross.svg");
-    background-repeat: no-repeat;
-    transform: translate(-50%, -50%);
-  }
-
-  &:active {
-    background-image: url("../img/close-menu-btn-hover.svg");
-    background-repeat: no-repeat;
-  }
+  outline: none;
 
   @media (min-width: @tablet-width) {
+    position: relative;
     margin-top: 20px;
   }
 
@@ -162,13 +152,17 @@
 
 .main-nav__link--active {
   @media (min-width: @desktop-width) {
+    padding-bottom: 7px;
     border-bottom: 2px solid white;
   }
 }
 
 .main-nav__abbreviation {
+  letter-spacing: 1px;
+
   @media (min-width: @desktop-width) {
-    margin-right: 6px;
+    margin-right: 5px;
+    letter-spacing: 0;
     text-transform: uppercase;
   }
 }
@@ -188,10 +182,6 @@
 }
 
 .main-nav--closed .main-nav__toggle {
-  display: block;
-  margin-top: 4px;
-  margin-right: 12px;
-
   @media (min-width: @tablet-width) {
     margin-top: 21px;
     margin-right: 10px;
@@ -200,18 +190,6 @@
   @media (min-width: @desktop-width) {
     display: none;
   }
-}
-
-.main-nav--closed .main-nav__toggle::before {
-  position: absolute;
-  content: "";
-  width: 50px;
-  height: 4px;
-  top: 10px;
-  left: 25px;
-  background-color: @color-white;
-  box-shadow: 0 10px 0 0 @color-white, 0 20px 0 0 @color-white;
-  border-radius: 2px;
 }
 
 .main-nav--nojs .main-nav__toggle {
@@ -224,4 +202,64 @@
 
 .main-nav--opened {
   background-color: @color-black;
+
+  @media (min-width: @desktop-width) {
+    background-color: @color-black01;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  margin-right: 0;
+}
+
+.main-nav__svg--cross {
+  display: none;
+}
+
+.main-nav__svg--cross path {
+  fill: @color-white;
+}
+
+.main-nav__toggle:hover .main-nav__svg--cross,
+.main-nav__toggle:focus .main-nav__svg--cross {
+  path {
+    fill: @hover-color;
+  }
+}
+
+.main-nav__toggle:active .main-nav__svg--cross {
+  path {
+    fill: @hover-color;
+    opacity: 0.3;
+  }
+}
+
+.main-nav--opened .main-nav__svg--cross {
+  display: block;
+}
+
+.main-nav__svg--burger {
+  display: none;
+}
+
+.main-nav__svg--burger path {
+  fill: @color-white;
+}
+
+.main-nav__toggle:hover .main-nav__svg--burger,
+.main-nav__toggle:focus .main-nav__svg--burger {
+  path {
+    fill: @hover-color;
+  }
+}
+
+.main-nav__toggle:active .main-nav__svg--burger {
+  path {
+    fill: @hover-color;
+    opacity: 0.3;
+  }
+}
+
+.main-nav--closed .main-nav__svg--burger {
+  display: block;
 }
