@@ -10,9 +10,13 @@
       <header class="page-header">
         <div class="page-header__wrapper">
           <nav class="main-nav main-nav--closed main-nav--nojs">
-              <a class="main-nav__logo" href="index.html">
-                <img class="page-header__img" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Пинк сайта фотоприложения для раскрашивания серых будней">
-              </a>
+            <a class="main-nav__logo">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img class="main-nav__logo-img" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Пинк сайта фотоприложения для раскрашивания серых будней">
+              </picture>
+            </a>
             <div class="main-nav__toggle-wrapper">
               <button class="main-nav__toggle" type="button">
                 <svg class="mai-nav__svg main-nav__svg--burger" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
@@ -102,11 +106,11 @@
                         </ul>
                     </fieldset>
                     <fieldset class="form__login">
-                        <legend class="form__legend form__login-legend">Контактная информация</legend>
+                        <h3 class="form__legend form__login-legend">Контактная информация</h3>
                         <div class="form__login-wrapper">
                           <div class="form__login-division">
                             <label class="form__login-label" for="phone-number">Номер телефона</label>
-                            <input class="form__login-input input-field" id="phone-number" type="tel" name="phonenumber" placeholder="Номер,пожалуйста">
+                            <input class="form__login-input input-field" id="phone-number" type="tel" name="phonenumber" placeholder="Номер, пожалуйста">
                           </div>
                           <div class="form__login-division">
                             <label class="form__login-label" for="email-address">Адрес почты</label>
@@ -132,7 +136,7 @@
                         </ul>
                     </fieldset>
                     <fieldset class="form__textarea">
-                        <legend class="form__legend">Опишите свои эмоции</legend>
+                        <h3 class="form__legend">Опишите свои эмоции</h3>
                         <textarea class="form__input-textarea" rows="5" cols="30" name="comment-field"  placeholder="Можно прям в красках, не стеснясь в выражениях"></textarea>
                     </fieldset>
                     <div class="form__button-wrapper">
@@ -143,7 +147,7 @@
               </div>
           </section>
       </main>
-      <footer class="page-main__footer page-footer container">
+      <footer class="page-footer container">
           <div class="wrapper-bottom">
             <div class="page-footer__logo">
               <a class="page-footer__logo-link" href="#">
