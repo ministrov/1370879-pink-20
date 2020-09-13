@@ -1,0 +1,73 @@
+.logo {
+  width: 74px;
+  height: 23px;
+
+  &:hover {
+    fill: @hover-color;
+  }
+
+  &:active {
+    fill: @hover-color;
+  }
+
+  @media (min-width: tablet-width) {
+    width: 145px;
+    height: 40px;
+  }
+
+  @media (min-width: tablet-width) {
+    width: 147px;
+  }
+}
+
+.logo path {
+  fill: @color-white;
+}
+
+.logo__glasses {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.logo__glasses-crop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+  }
+}
+
+.logo__stars {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.logo__stars path {
+  @media (min-width: @desktop-width) {
+    fill: @hover-color;
+  }
+}
+
+.logo__star {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+  }
+}
+
+.logo__star path {
+  @media (min-width: @desktop-width) {
+    fill: @hover-color;
+  }
+}
