@@ -1,15 +1,4 @@
 .logo {
-  width: 74px;
-  height: 23px;
-
-  &:hover {
-    fill: @hover-color;
-  }
-
-  &:active {
-    fill: @hover-color;
-  }
-
   @media (min-width: tablet-width) {
     width: 145px;
     height: 40px;
@@ -22,6 +11,15 @@
 
 .logo path {
   fill: @color-white;
+}
+
+.logo:hover path {
+  fill: @hover-color;
+}
+
+.logo:active path {
+  fill: @color-white;
+  opacity: 0.3;
 }
 
 .logo__glasses {
