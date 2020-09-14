@@ -157,6 +157,24 @@
   }
 }
 
+.main-nav__logo[href] {
+  &:hover,
+  &:focus {
+    path {
+      fill: @hover-color;
+    }
+  }
+}
+
+.main-nav__logo[href] {
+  &:active {
+    path {
+      fill: @color-white;
+      opacity: 0.3;
+    }
+  }
+}
+
 .main-nav__logo-img {
   @media (min-width: @tablet-width) {
     width: 145px;

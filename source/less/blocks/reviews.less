@@ -94,3 +94,74 @@
     padding-top: 6px;
   }
 }
+
+.reviews__slider-button-list {
+  display: none;
+  position: relative;
+  list-style: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.reviews__slider-button {
+  @media (min-width: @desktop-width) {
+    cursor: pointer;
+
+    path {
+      fill: @color-black;
+      opacity: 0.3;
+    }
+  }
+}
+
+.reviews__slider-button--left {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: -177px;
+    left: -6px;
+    background-color: @color-white;
+    border: none;
+  }
+}
+
+.reviews__slider-button--left:hover,
+.reviews__slider-button--left:focus {
+  path {
+    fill: @color-black;
+    opacity: 0.6;
+  }
+}
+
+.reviews__slider-button--left:active {
+  path {
+    fill: @color-black;
+    opacity: 0.1;
+  }
+}
+
+.reviews__slider-button--right {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: -177px;
+    left: 913px;
+    background-color: @color-white;
+    border: none;
+  }
+}
+
+.reviews__slider-button:hover,
+.reviews__slider-button:focus {
+  path {
+    fill: @color-black;
+    opacity: 0.6;
+  }
+}
+
+.reviews__slider-button:active {
+  path {
+    fill: @color-black;
+    opacity: 0.1;
+  }
+}
