@@ -4,7 +4,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Страница формы сайта фотоприложения для раскрашивания серых будней</title>
-      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/style.min.css">
     </head>
     <body class="page-body">
       <header class="page-header">
@@ -156,7 +156,9 @@
                     </fieldset>
                     <fieldset class="form__textarea">
                         <h3 class="form__legend">Опишите свои эмоции</h3>
-                        <textarea class="form__input-textarea" rows="5" cols="30" name="comment-field"  placeholder="Можно прям в красках, не стеснясь в выражениях"></textarea>
+                        <label class="form__textarea-label">
+                          <textarea class="form__input-textarea" rows="5" cols="30" name="comment-field" placeholder="Можно прям в красках, не стеснясь в выражениях"></textarea>
+                        </label>
                     </fieldset>
                     <div class="form__button-wrapper">
                       <button class="form__button" type="submit">Отправить форму</button>
