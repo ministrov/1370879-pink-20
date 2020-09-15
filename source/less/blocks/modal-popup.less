@@ -13,37 +13,21 @@
 }
 
 .modal-popup--success {
-  position: absolute;
-  top: 1894px;
-  left: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
   z-index: 100;
   box-shadow: 0 7px 15px @box-shadow;
-
-  @media (min-width: @tablet-width) {
-    left: 50%;
-    transform: translate(-50%);
-  }
-
-  @media (min-width: @desktop-width) {
-    top: 1299px;
-  }
+  transform: translateX(-50%);
 }
 
 .modal-popup--failure {
-  position: absolute;
-  top: 1420px;
-  left: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
   z-index: 100;
+  transform: translate(-50%);
   box-shadow: 0 7px 15px @box-shadow;
-
-  @media (min-width: @tablet-width) {
-    left: 50%;
-    transform: translate(-50%);
-  }
-
-  @media (min-width: @desktop-width) {
-    top: 872px;
-  }
 }
 
 .modal-popup__title {
