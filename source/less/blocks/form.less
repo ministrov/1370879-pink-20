@@ -84,7 +84,7 @@
   background-color: @bg-gallery-storage;
 
   @media (min-width: @tablet-width) {
-    margin-top: 60px;
+    margin-top: 63px;
     margin-left: 0;
     margin-right: 0;
     border: 2px solid @input-grey;
@@ -113,6 +113,10 @@
   @media (min-width: @desktop-width) {
     left: 9px;
   }
+}
+
+.form__checkbox-input:focus + .form__checkbox-label::before {
+  outline: 2px solid @color-black;
 }
 
 .form__legend {
@@ -296,7 +300,7 @@
 
   @media (min-width: @tablet-width) {
     position: relative;
-    margin-top: 59px;
+    margin-top: 69px;
     padding-top: 46px;
     border: 2px solid @input-grey;
     box-sizing: border-box;
@@ -331,7 +335,7 @@
     @media (min-width: @desktop-width) {
       width: 100%;
       margin: 0;
-      margin-top: 57px;
+      margin-top: 67px;
       padding: 0;
       border: 2px solid @input-grey;
 
@@ -406,6 +410,7 @@
 
   @media (min-width: @desktop-width) {
     margin-left: 59px;
+    margin-bottom: 10px;
 
     &:nth-child(2) {
       margin-left: 4px;
@@ -543,6 +548,10 @@
   }
 }
 
+.form__radio-input:focus + .form__radio-label::before {
+  outline: 2px solid @color-black;
+}
+
 .form__radio-label:hover::before {
   border: 2px solid @color-black;
 }
@@ -564,19 +573,20 @@
 
   @media (min-width: @tablet-width) {
     position: relative;
-    margin-top: 59px;
-    padding-top: 37px;
-    padding-bottom: 37px;
+    margin-top: 67px;
+    margin-bottom: 40px;
+    padding-top: 43px;
+    padding-bottom: 46px;
     padding-left: 13px;
     border: 2px solid @input-grey;
     order: 4;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 58px;
-    margin-bottom: 107px;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    margin-top: 66px;
+    margin-bottom: 104px;
+    padding-top: 42px;
+    padding-bottom: 33px;
     padding-left: 60px;
     padding-right: 60px;
   }
